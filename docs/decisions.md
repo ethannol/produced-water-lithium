@@ -209,3 +209,6 @@ Entries after the freeze are marked POST-FREEZE and are exploratory.
 ## 2026-10-12: practical transfer, missing magnesium and domain support
 
 Foregrounded held-basin screening precision and per-basin usefulness rather than treating pooled rule success as universal deployment evidence. Added supplementary pass/fail/unknown coverage: missing Mg is unknown only above the Li floor; the frozen denominator is retained and unknown-as-pass/fail bounds are displayed separately. Added per-held-basin and per-held-dataset probability bins from the existing OOF predictions, with support and Wilson intervals. These describe lithium above the floor alone, not the joint Mg/Li screen; no calibration is trained on held-out labels. Inputs, original predictions and primary ledger remain unchanged. Separate outputs and source revision document the new audit.
+
+
+Supplementary preparation is now invoked through `exploratory/prepare_inputs.py`, which supplies isolated cairn ledger/check paths even when callers set primary paths. The OOF rerun is covered by the same helper in the lithium project. Documentation no longer asks readers to invoke bookkeeping-writing source scripts directly for supplementary work.

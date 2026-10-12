@@ -14,3 +14,6 @@ dist/
 data/derived/rows_included.csv
 data/derived/wells_primary.csv
 data/derived/oof_*.csv
+
+# Supplementary preparation bookkeeping; never the published primary ledger
+reports/exploratory/preparation/

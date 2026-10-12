@@ -33,7 +33,7 @@ packages = ["src/pwlithium"]
 testpaths = ["tests"]
 
 [tool.ruff]
-line-length = 100
+line-length = 120
 target-version = "py312"
 
 [tool.ruff.lint]
@@ -41,3 +41,4 @@ select = ["E", "F", "I", "B", "UP"]
 
 [tool.ruff.lint.per-file-ignores]
 "scripts/*.py" = ["E501"]
+"tests/*.py" = ["E501"]

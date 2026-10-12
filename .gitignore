@@ -10,3 +10,7 @@ data/archive/
 *.egg-info/
 dist/
 .DS_Store
+# regenerable derived tables too large to commit (cairn run rebuilds them in minutes)
+data/derived/rows_included.csv
+data/derived/wells_primary.csv
+data/derived/oof_*.csv

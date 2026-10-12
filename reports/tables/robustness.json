@@ -1,0 +1,92 @@
+{
+  "li_focused": {
+    "top5_primary": [
+      "Amarillo Arch",
+      "Arkla",
+      "Appalachian",
+      "Michigan",
+      "Southern Oklahoma"
+    ],
+    "top5_other": [
+      "Amarillo Arch",
+      "Arkla",
+      "Appalachian",
+      "Michigan",
+      "Southern Oklahoma"
+    ],
+    "top5_overlap": 5,
+    "n_separable_pairs": 143,
+    "n_reversed_pairs": 0,
+    "reversed_pairs": [],
+    "robust": true,
+    "moved": []
+  },
+  "charge_balance": {
+    "tol5": {
+      "top5_primary": [
+        "Amarillo Arch",
+        "Arkla",
+        "Appalachian",
+        "Michigan",
+        "Southern Oklahoma"
+      ],
+      "top5_other": [
+        "Amarillo Arch",
+        "Arkla",
+        "Appalachian",
+        "Southern Oklahoma",
+        "Michigan"
+      ],
+      "top5_overlap": 5,
+      "n_separable_pairs": 143,
+      "n_reversed_pairs": 0,
+      "reversed_pairs": [],
+      "robust": true,
+      "moved": []
+    },
+    "tol15": {
+      "top5_primary": [
+        "Amarillo Arch",
+        "Arkla",
+        "Appalachian",
+        "Michigan",
+        "Southern Oklahoma"
+      ],
+      "top5_other": [
+        "Amarillo Arch",
+        "Arkla",
+        "Appalachian",
+        "Michigan",
+        "Southern Oklahoma"
+      ],
+      "top5_overlap": 5,
+      "n_separable_pairs": 143,
+      "n_reversed_pairs": 0,
+      "reversed_pairs": [],
+      "robust": true,
+      "moved": []
+    },
+    "none": {
+      "top5_primary": [
+        "Amarillo Arch",
+        "Arkla",
+        "Appalachian",
+        "Michigan",
+        "Southern Oklahoma"
+      ],
+      "top5_other": [
+        "Amarillo Arch",
+        "Arkla",
+        "Appalachian",
+        "Michigan",
+        "Southern Oklahoma"
+      ],
+      "top5_overlap": 5,
+      "n_separable_pairs": 143,
+      "n_reversed_pairs": 0,
+      "reversed_pairs": [],
+      "robust": true,
+      "moved": []
+    }
+  }
+}

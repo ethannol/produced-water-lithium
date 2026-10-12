@@ -141,3 +141,66 @@ Entries after the freeze are marked POST-FREEZE and are exploratory.
   are run by hand: `cairn verify --quick` during development and the full `cairn verify`
   with the clean re-execution before finishing. Protected paths are respected by
   convention; `cairn.toml` was edited once, at setup, before any analysis.
+
+## 2026-10-12 POST-FREEZE Tables live in reports/tables, figures in reports/figures
+
+- Evidence: the brief asks for `reports/` to hold the report, figures and tables; cairn's
+  template puts them under `artifacts/`. Scripts write tables to `reports/tables/` and
+  figures to `reports/figures/`; `artifacts/` keeps the ledger (`numbers.json`) and the
+  checks log. No result changes.
+
+## 2026-10-12 POST-FREEZE A missing-key bug caught by the harness, fixed before any result was read
+
+- Evidence: the first run of `scripts/10_prepare.py` collapsed 87,458 rows to 54,579
+  wells; the rebuilt key in `scripts/20_missingness.py` then failed inside the fold
+  splitter because 2,879 rows (APPALACHIAN, no API or well name, exact coordinates,
+  no depth) had a missing `well_id`: under pandas 3 the default string dtype keeps NaN
+  as missing through `astype(str)`, so concatenating the depth into the key produced a
+  missing key and `groupby` silently dropped those rows from the well table. The key is
+  now formatted explicitly ("nodepth" for a missing depth) and `well_key` raises on any
+  missing key. After the fix the primary well table has 54,957 wells and 4,141 lithium
+  wells. The basin tables were not inspected between the two runs beyond the console
+  echo of the top rows, and no reported number comes from the first run.
+
+## 2026-10-12 POST-FREEZE Compute: single-threaded OpenMP, folds in parallel processes
+
+- Evidence: one HistGradientBoosting fit on 3,921 wells took 13 seconds with the
+  default OpenMP thread pool on this ten-core machine and 0.33 seconds with
+  `OMP_NUM_THREADS=1` (thread oversubscription on small data). `scripts/40_model.py`
+  and `scripts/45_control.py` set the variable before importing scikit-learn, and
+  `pwlithium.cv.evaluate` runs outer folds in parallel processes (joblib). Every fold is
+  seeded and the fold list is fixed, so results do not depend on scheduling; the model
+  step runs in under a minute. The positive control is its own step (`45_control.py`)
+  so that each step stays short. Nothing in the pre-registered models, grids or
+  protocols changed.
+
+## 2026-10-12 POST-FREEZE Ridge "precision at the floor" is undefined when it never predicts above the floor
+
+- Evidence: the regularized linear model shrinks toward the mean and predicts
+  Li >= 100 mg/L for very few or no wells under some protocols, so its precision at the
+  floor is 0 or undefined while its AUC (a ranking measure) is high. Both numbers are
+  reported as computed; the report says why they disagree.
+
+## 2026-10-12 What blocked in cairn and the workarounds (nothing in cairn was edited)
+
+1. `cairn freeze` hashes everything under `data/raw/`, so the gitignored 80 MB workbook
+   lives in `data/archive/npwgd/` and only the extract is frozen (entry above).
+2. `cairn profile` raises `ValueError: Mixed timezones detected` on this extract because
+   it tries to parse every text column as dates. `scripts/00_profile.py` writes the
+   profile instead and records the same facts.
+3. The script lint (C102) flags any `.join(` attribute call, including string joins.
+   String joins live in `pwlithium.util.commas` and `pwlithium.util.lines`.
+4. `cairn render` writes only `report.tmpl.md`; `scripts/60_docs.py` renders the README,
+   walkthrough and resume bullet with `cairn.numbers.render` and fails on any unresolved
+   key, and records the test count from the test files.
+5. `cairn verify` warns on bare numbers in the report template, including digits inside
+   headings and hyphenated words ("Result 2", "5-fold"). Thresholds that are inputs, not
+   results, are written in inline code; headings and words were rephrased.
+6. `cairn.censored_values` expects `<limit` text or marker words; the Li column has none,
+   so the sensor records 0 censored and the non-detect finding is carried by the
+   `nondetect.*` ledger keys instead.
+7. The hooks did not fire (session note above); the sensors were run by hand and the
+   final `cairn verify` (with the clean rerun) passed with 0 failures and 0 warnings.
+8. The cairn checkout gained a commit during the session (a portfolio card, no harness
+   code); the ledger records the commit at run time (`env.cairn_commit`), which the README
+   quotes.

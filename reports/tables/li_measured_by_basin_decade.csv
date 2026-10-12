@@ -1,0 +1,417 @@
+BASIN,decade,sum,size
+Alaska North Slope,1960,0,2
+Alaska North Slope,1970,9,28
+Alaska North Slope,,0,1
+Amarillo Arch,1920,0,6
+Amarillo Arch,1930,0,27
+Amarillo Arch,1940,0,48
+Amarillo Arch,1950,26,169
+Amarillo Arch,1960,3,110
+Amarillo Arch,1970,0,71
+Amarillo Arch,,1,47
+Anadarko,1910,0,1
+Anadarko,1920,0,40
+Anadarko,1930,0,116
+Anadarko,1940,0,595
+Anadarko,1950,45,1524
+Anadarko,1960,94,2151
+Anadarko,1970,0,837
+Anadarko,1980,0,22
+Anadarko,2000,0,37
+Anadarko,2010,0,2851
+Anadarko,,111,1175
+Appalachian,1900,0,2
+Appalachian,1910,0,34
+Appalachian,1920,0,6
+Appalachian,1930,1,53
+Appalachian,1940,0,21
+Appalachian,1950,4,13
+Appalachian,1960,11,40
+Appalachian,1970,58,75
+Appalachian,1980,11,75
+Appalachian,1990,0,3
+Appalachian,2000,0,9
+Appalachian,2010,81,88
+Appalachian,,608,1836
+Arkla,1930,0,1
+Arkla,1940,0,187
+Arkla,1950,1,886
+Arkla,1960,62,554
+Arkla,1970,94,849
+Arkla,1980,0,34
+Arkla,,130,221
+Arkoma,1920,0,12
+Arkoma,1930,0,11
+Arkoma,1940,0,2
+Arkoma,1950,5,57
+Arkoma,1960,17,46
+Arkoma,1970,0,61
+Arkoma,1980,0,1
+Arkoma,,6,119
+Atlantic Coastal Plain,1940,0,18
+Atlantic Coastal Plain,1950,0,5
+Atlantic Coastal Plain,,0,2
+Basin and Range,1950,0,1
+Basin and Range,1960,0,1
+Basin and Range,,0,1
+Bend Arch,1930,0,3
+Bend Arch,1940,0,23
+Bend Arch,1950,3,72
+Bend Arch,1960,9,57
+Bend Arch,1970,0,25
+Bend Arch,,1,42
+Bethel,1960,0,3
+Bethel,,0,3
+Big Horn,1920,0,21
+Big Horn,1930,0,47
+Big Horn,1940,0,252
+Big Horn,1950,3,975
+Big Horn,1960,170,656
+Big Horn,1970,0,177
+Big Horn,1980,0,122
+Big Horn,1990,0,81
+Big Horn,2000,1,142
+Big Horn,2010,0,33
+Big Horn,,10,617
+Black Mesa,1950,6,41
+Black Mesa,1960,1,27
+Black Mesa,1970,1,2
+Black Warrior,1930,0,1
+Black Warrior,1940,0,1
+Black Warrior,1950,0,18
+Black Warrior,1960,0,20
+Black Warrior,1970,4,38
+Black Warrior,1980,9,125
+Black Warrior,,0,31
+Bravo Dome,1970,0,6
+Bravo Dome,1980,0,1
+Central Kansas Uplift,1920,0,1
+Central Kansas Uplift,1930,0,200
+Central Kansas Uplift,1940,0,372
+Central Kansas Uplift,1950,1,525
+Central Kansas Uplift,1960,7,164
+Central Kansas Uplift,1970,0,44
+Central Kansas Uplift,1980,0,5
+Central Kansas Uplift,,0,1797
+Central Montana Uplift,1930,0,2
+Central Montana Uplift,1940,0,22
+Central Montana Uplift,1950,0,239
+Central Montana Uplift,1960,6,37
+Central Montana Uplift,1970,0,13
+Central Montana Uplift,,0,48
+Chadron Arch,1930,0,2
+Chadron Arch,1940,0,3
+Chadron Arch,1950,0,20
+Chadron Arch,1960,17,38
+Chadron Arch,1970,0,3
+Chadron Arch,,3,7
+Chautauqua Platform,1920,0,38
+Chautauqua Platform,1930,0,50
+Chautauqua Platform,1940,0,613
+Chautauqua Platform,1950,18,1211
+Chautauqua Platform,1960,72,223
+Chautauqua Platform,1970,3,513
+Chautauqua Platform,1980,0,21
+Chautauqua Platform,2000,8,8
+Chautauqua Platform,,10,3067
+Cherokee,1930,0,2
+Cherokee,1940,0,94
+Cherokee,1950,0,193
+Cherokee,1960,0,12
+Cherokee,1970,0,4
+Cherokee,,0,64
+Cook Inlet,1960,5,78
+Cook Inlet,,0,17
+Copper River,1960,0,1
+Cuyama,1960,0,1
+Cuyama,1970,0,1
+Cuyama,,0,3
+Denver,1920,0,1
+Denver,1940,0,11
+Denver,1950,5,442
+Denver,1960,90,432
+Denver,1970,0,272
+Denver,1980,0,10
+Denver,1990,0,61
+Denver,2000,0,3
+Denver,2010,0,46
+Denver,,8,290
+East Texas,1930,0,19
+East Texas,1940,0,63
+East Texas,1950,6,878
+East Texas,1960,19,420
+East Texas,1970,0,440
+East Texas,1980,0,22
+East Texas,,1,78
+Forest City,1930,0,2
+Forest City,1940,0,21
+Forest City,1950,0,1
+Forest City,1960,0,2
+Forest City,1970,0,4
+Forest City,,0,31
+Fort Worth,1920,0,1
+Fort Worth,1930,1,2
+Fort Worth,1940,0,20
+Fort Worth,1950,0,12
+Fort Worth,1960,3,42
+Fort Worth,1970,0,15
+Fort Worth,1980,0,1
+Fort Worth,,0,38
+Great Basin,1950,0,33
+Great Basin,1960,4,13
+Great Basin,1970,1,11
+Great Basin,,0,16
+Greater Green River,1920,0,15
+Greater Green River,1930,1,36
+Greater Green River,1940,10,248
+Greater Green River,1950,21,777
+Greater Green River,1960,397,1545
+Greater Green River,1970,2,674
+Greater Green River,1980,2,541
+Greater Green River,1990,15,422
+Greater Green River,2000,21,4239
+Greater Green River,2010,40,1535
+Greater Green River,,14,903
+Gulf Coast,1920,0,13
+Gulf Coast,1930,0,155
+Gulf Coast,1940,0,1329
+Gulf Coast,1950,31,4567
+Gulf Coast,1960,195,3994
+Gulf Coast,1970,166,2220
+Gulf Coast,1980,39,186
+Gulf Coast,1990,8,8
+Gulf Coast,2000,0,1
+Gulf Coast,,350,1595
+Gulf of Alaska,1960,0,3
+Hannah,1920,0,1
+Hannah,1930,0,1
+Hannah,1940,0,3
+Hannah,1950,2,17
+Hannah,1960,5,40
+Hannah,1970,0,21
+Hannah,1980,0,8
+Hannah,1990,0,10
+Hannah,2000,0,4
+Hannah,2010,0,2
+Hannah,,1,13
+Illinois,1930,0,45
+Illinois,1940,0,304
+Illinois,1950,2,114
+Illinois,1960,13,253
+Illinois,1970,0,64
+Illinois,1980,0,8
+Illinois,,10,1911
+Kerr,1960,0,4
+Laramie,1930,0,4
+Laramie,1940,0,40
+Laramie,1950,0,134
+Laramie,1960,23,102
+Laramie,1970,0,17
+Laramie,1980,0,6
+Laramie,,1,50
+Las Animas Arch,1940,0,1
+Las Animas Arch,1950,0,4
+Las Animas Arch,1960,14,56
+Las Animas Arch,1970,0,23
+Las Animas Arch,1980,0,1
+Las Animas Arch,,1,22
+Llano Uplift,1940,0,3
+Llano Uplift,1950,0,6
+Llano Uplift,1960,0,13
+Llano Uplift,1970,0,13
+Llano Uplift,1980,0,3
+Llano Uplift,,0,5
+Los Angeles,1930,0,1
+Los Angeles,1940,0,6
+Los Angeles,1950,0,71
+Los Angeles,1960,0,49
+Los Angeles,1970,0,103
+Los Angeles,1980,0,3
+Los Angeles,,0,42
+Michigan,1930,0,61
+Michigan,1940,0,149
+Michigan,1950,0,21
+Michigan,1960,2,52
+Michigan,1970,37,174
+Michigan,1980,8,36
+Michigan,1990,0,2
+Michigan,2000,0,10
+Michigan,,104,482
+Nemaha Uplift,1920,0,37
+Nemaha Uplift,1930,0,12
+Nemaha Uplift,1940,0,56
+Nemaha Uplift,1950,0,32
+Nemaha Uplift,1960,0,3
+Nemaha Uplift,1970,0,89
+Nemaha Uplift,,0,263
+North Park,1950,0,20
+North Park,1960,5,29
+North Park,1970,0,25
+North Park,,2,20
+Ouachita Thrust,1930,1,1
+Ouachita Thrust,1940,0,1
+Ouachita Thrust,1950,4,7
+Ouachita Thrust,1960,3,12
+Ouachita Thrust,,1,9
+Palo Duro,1930,0,2
+Palo Duro,1940,0,3
+Palo Duro,1950,3,77
+Palo Duro,1960,7,44
+Palo Duro,1970,0,64
+Palo Duro,,0,154
+Paradox,1940,0,8
+Paradox,1950,2,179
+Paradox,1960,33,246
+Paradox,1970,8,69
+Paradox,,4,186
+Permian,1920,0,10
+Permian,1930,0,64
+Permian,1940,7,383
+Permian,1950,159,3835
+Permian,1960,176,2400
+Permian,1970,1,1763
+Permian,1980,0,317
+Permian,1990,0,446
+Permian,2000,0,357
+Permian,2010,0,39
+Permian,,132,6458
+Piceance,1920,0,1
+Piceance,1940,0,15
+Piceance,1950,0,96
+Piceance,1960,42,155
+Piceance,1970,0,83
+Piceance,,4,181
+Powder River,1910,0,1
+Powder River,1920,0,43
+Powder River,1930,0,61
+Powder River,1940,0,124
+Powder River,1950,4,785
+Powder River,1960,509,1990
+Powder River,1970,2,599
+Powder River,1980,7,783
+Powder River,1990,25,435
+Powder River,2000,49,1028
+Powder River,2010,4,187
+Powder River,,28,952
+Puget Sound,1950,0,1
+Raton,1920,0,1
+Raton,1940,0,2
+Raton,1950,0,14
+Raton,1960,0,5
+Raton,1970,0,3
+Raton,1980,1,11
+Raton,1990,22,228
+Raton,2000,19,127
+Raton,,168,1752
+Sacramento,1950,0,10
+Sacramento,1970,0,2
+Sacramento,1980,53,53
+Salina,1930,0,7
+Salina,1940,0,3
+Salina,1950,0,14
+Salina,1960,1,3
+Salina,,0,33
+Salinas,1950,0,3
+Salinas,1970,0,2
+San Joaquin,1930,0,9
+San Joaquin,1940,0,35
+San Joaquin,1950,8,102
+San Joaquin,1960,0,66
+San Joaquin,1970,103,136
+San Joaquin,,22,73
+San Juan,1910,0,1
+San Juan,1940,0,2
+San Juan,1950,3,313
+San Juan,1960,3,436
+San Juan,1970,0,586
+San Juan,1980,0,805
+San Juan,1990,0,974
+San Juan,2000,0,183
+San Juan,,0,382
+Santa Maria,1960,0,4
+Santa Maria,1970,0,11
+Santa Maria,,0,15
+Sedgwick,1920,0,91
+Sedgwick,1930,0,128
+Sedgwick,1940,0,51
+Sedgwick,1950,1,84
+Sedgwick,1960,4,32
+Sedgwick,1970,0,17
+Sedgwick,1980,0,2
+Sedgwick,,0,621
+Shirley,1950,0,1
+Shirley,1960,1,5
+Shirley,,0,1
+Sierra Grande Uplift,1970,0,8
+Sioux Uplift,1950,0,2
+Sioux Uplift,,0,6
+Snake River,1950,0,5
+Snake River,1960,1,6
+Snake River,1970,0,2
+South Florida,1940,0,8
+South Florida,1950,1,7
+South Florida,1960,0,40
+South Florida,1970,0,5
+South Florida,,0,3
+Southern Alaska,1950,0,1
+Southern Alaska,,0,1
+Southern Oklahoma,1930,0,2
+Southern Oklahoma,1940,2,78
+Southern Oklahoma,1950,11,365
+Southern Oklahoma,1960,101,297
+Southern Oklahoma,1970,0,128
+Southern Oklahoma,1980,0,5
+Southern Oklahoma,,4,456
+Sweetgrass Arch,1930,0,16
+Sweetgrass Arch,1940,0,25
+Sweetgrass Arch,1950,0,268
+Sweetgrass Arch,1960,11,87
+Sweetgrass Arch,1970,0,61
+Sweetgrass Arch,,0,155
+Uinta,1940,0,2
+Uinta,1950,0,88
+Uinta,1960,138,410
+Uinta,1970,39,160
+Uinta,,3,145
+Ventura,1950,12,19
+Ventura,1960,0,2
+Ventura,1970,0,42
+Ventura,1990,3,3
+Ventura,,0,14
+Wasatch Plateau,1950,0,9
+Wasatch Plateau,1960,1,6
+Wasatch Plateau,1970,0,4
+Wasatch Plateau,1980,0,2
+Wasatch Plateau,1990,41,41
+Wasatch Plateau,,0,16
+Western Columbia,1960,0,5
+Williston,1930,0,10
+Williston,1940,0,21
+Williston,1950,6,3006
+Williston,1960,328,1658
+Williston,1970,1,322
+Williston,1980,0,4196
+Williston,1990,0,762
+Williston,2000,0,197
+Williston,2010,1,177
+Williston,,152,602
+Wind River,1920,0,13
+Wind River,1930,0,14
+Wind River,1940,0,215
+Wind River,1950,9,705
+Wind River,1960,274,1021
+Wind River,1970,0,231
+Wind River,1980,0,132
+Wind River,1990,1,181
+Wind River,2000,0,573
+Wind River,2010,1,46
+Wind River,,14,516
+Wyoming Thrust Belt,1940,0,2
+Wyoming Thrust Belt,1950,0,16
+Wyoming Thrust Belt,1960,2,5
+Wyoming Thrust Belt,1970,2,12
+Wyoming Thrust Belt,1980,0,45
+Wyoming Thrust Belt,1990,0,6
+Wyoming Thrust Belt,2000,0,15
+Wyoming Thrust Belt,2010,0,1
+Wyoming Thrust Belt,,0,4

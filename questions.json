@@ -3,58 +3,149 @@
     {
       "id": "q1_nondetects",
       "text": "How are values below detection represented in the v3.0 lithium column (blank, zero, negative, flagged), and how many lithium values are integer-valued or below 1 mg/L?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "nondetect.Li.nonempty",
+        "nondetect.Li.zero",
+        "nondetect.Li.negative",
+        "nondetect.Li.non_numeric",
+        "nondetect.Li.lt_prefixed",
+        "nondetect.dictionary_detection_fields",
+        "nondetect.li_share_integer",
+        "nondetect.li_n_below_1",
+        "nondetect.li_min"
+      ],
+      "notes": "Below-detection results are empty cells, indistinguishable from not analyzed; no zeros, negatives or flags; the dictionary has no detection fields."
     },
     {
       "id": "q2_ranking",
       "text": "Which basins with at least 20 lithium wells have the highest median well lithium and the highest fraction of wells passing Li >= 100 mg/L and Mg/Li <= 10, with cluster bootstrap intervals, and how many basins qualify?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "screen.n_basins_ranked",
+        "screen.basin1.name",
+        "screen.basin1.median_li",
+        "screen.basin1.median_lo",
+        "screen.basin1.median_hi",
+        "screen.basin2.name",
+        "screen.basin2.median_li",
+        "screen.basin3.name",
+        "screen.basin3.median_li",
+        "screen.pass1.name",
+        "screen.pass1.frac_pass",
+        "screen.pass1.frac_lo",
+        "screen.pass1.frac_hi",
+        "screen.n_basins_frac_interval_excludes_zero",
+        "screen.n_pass_primary"
+      ],
+      "notes": "Top by median: Amarillo Arch (27 wells, one dataset, wide interval), Arkla, Appalachian; three basins have screened-fraction intervals excluding zero. Tables in reports/tables."
     },
     {
       "id": "q3_compilation_bias",
       "text": "Does the five-basin top set and the order of separable basins survive removing the four lithium-focused datasets named in the version history, and the charge-balance tolerances 5, 15 and none?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "screen.adj.robust",
+        "screen.adj.top5_overlap",
+        "screen.adj.n_reversed_pairs",
+        "screen.adj.n_li_wells_removed",
+        "screen.cb.robust",
+        "screen.ds.median_ratio",
+        "screen.ds.max_ratio",
+        "screen.ds.n_basins_ratio_ge2"
+      ],
+      "notes": "Robust to removing the four named datasets (they hold few wells) and to the tolerance; but dataset medians within a basin differ by a median factor recorded in screen.ds.median_ratio."
     },
     {
       "id": "q4_missingness",
       "text": "How do rows with lithium measured differ from rows without on TDS, depth, decade, play type, basin and dataset, and what is the cross-validated AUC of predicting whether lithium was measured?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "miss.verdict",
+        "miss.auc",
+        "miss.smd_log_tds",
+        "miss.smd_log_depth",
+        "miss.tds_median_measured",
+        "miss.tds_median_not_measured",
+        "miss.decade_top_measured_share",
+        "miss.decade_top_measured_share_not",
+        "miss.datasets_none_measured",
+        "miss.datasets_all_measured"
+      ],
+      "notes": "Missing is not random by the AUC rule; standardized differences on TDS and depth are small; decade and dataset carry the difference."
     },
     {
       "id": "q5_prediction",
       "text": "What is the out-of-sample RMSE and R-squared of log10 lithium under random-well, leave-one-dataset-out and leave-one-basin-out evaluation for the ridge and boosted models, with spread across folds, and which pre-registered conclusion applies?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "model.verdict",
+        "model.random.hgb.rmse_pooled",
+        "model.lodo.hgb.rmse_pooled",
+        "model.lobo.hgb.rmse_pooled",
+        "model.random.hgb.r2_pooled",
+        "model.lodo.hgb.r2_pooled",
+        "model.lobo.hgb.r2_pooled",
+        "model.random.hgb.rmse_fold_min",
+        "model.random.hgb.rmse_fold_max",
+        "model.lobo.hgb.rmse_fold_min",
+        "model.lobo.hgb.rmse_fold_max",
+        "model.random.ridge.rmse_pooled",
+        "model.lobo.ridge.rmse_pooled",
+        "model.lobo.hgb.n_basins_r2_ge_0_3"
+      ],
+      "notes": "Pre-registered rule returns 'useful out of basin' on pooled R-squared and AUC; the report states the caveat that per-basin skill and precision at the floor collapse out of basin."
     },
     {
       "id": "q6_screening_classifier",
       "text": "At the 100 mg/L floor, what are the AUC, precision, recall and Brier score of the boosted model under each protocol?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "model.random.hgb.cls_auc",
+        "model.lodo.hgb.cls_auc",
+        "model.lobo.hgb.cls_auc",
+        "model.random.hgb.cls_precision",
+        "model.lodo.hgb.cls_precision",
+        "model.lobo.hgb.cls_precision",
+        "model.random.hgb.cls_recall",
+        "model.lobo.hgb.cls_recall",
+        "model.random.hgb.cls_brier",
+        "model.lobo.hgb.cls_brier",
+        "model.lobo.hgb.calib_max_gap"
+      ],
+      "notes": "AUC stays high under every protocol; precision, recall and calibration fall out of basin."
     },
     {
       "id": "q7_positive_control",
       "text": "Does the same pipeline predict log10 TDS with random-fold R-squared of at least 0.80, and how does its leave-one-basin-out R-squared compare?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "control.passes",
+        "control.random.hgb.r2_pooled",
+        "control.lobo.hgb.r2_pooled",
+        "control.lodo.hgb.r2_pooled",
+        "control.n_wells"
+      ],
+      "notes": "Passes the pre-registered criterion."
     },
     {
       "id": "q8_data_quality_counts",
       "text": "How many retained rows and lithium wells depend on an estimated specific gravity, how many rows does the charge-balance filter remove, how many are balanced by construction, and how many rows collapse in deduplication?",
-      "status": "open",
-      "answer_keys": [],
-      "notes": ""
+      "status": "answered",
+      "answer_keys": [
+        "prepare.sg.estimated_rows",
+        "prepare.sg.ppm_estimated_rows",
+        "prepare.wells.li_wells_sg_estimated",
+        "prepare.cb.removed_rows",
+        "prepare.cb.null_rows",
+        "prepare.cb.li_rows_removed",
+        "prepare.cb.balanced_by_construction_rows",
+        "prepare.cb.balanced_by_construction_li_rows",
+        "prepare.wells.rows_collapsed",
+        "prepare.wells.li_rows_collapsed",
+        "prepare.wells.li_wells_key_row"
+      ],
+      "notes": "All counts recorded; see report section on data and comparability."
     }
   ]
 }

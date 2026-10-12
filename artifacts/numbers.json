@@ -1,0 +1,4075 @@
+{
+  "control.lobo.hgb.cls_auc": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.6461129510196967
+  },
+  "control.lobo.hgb.cls_brier": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.00023472224684487422
+  },
+  "control.lobo.hgb.cls_n": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 17215
+  },
+  "control.lobo.hgb.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 17211
+  },
+  "control.lobo.hgb.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 17215
+  },
+  "control.lobo.hgb.cls_precision": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.999767644496079
+  },
+  "control.lobo.hgb.cls_recall": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 1.0
+  },
+  "control.lobo.hgb.mae_pooled": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.3032667307850153
+  },
+  "control.lobo.hgb.n_folds": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 35
+  },
+  "control.lobo.hgb.n_oof": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 17215
+  },
+  "control.lobo.hgb.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.7578589952498442
+  },
+  "control.lobo.hgb.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.18030132746920735
+  },
+  "control.lobo.hgb.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": -4.629915406979862
+  },
+  "control.lobo.hgb.r2_pooled": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.6955279328426957
+  },
+  "control.lobo.hgb.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.730683778776538
+  },
+  "control.lobo.hgb.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.38697243232123796
+  },
+  "control.lobo.hgb.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.21828695364855802
+  },
+  "control.lobo.hgb.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.3284962710019877
+  },
+  "control.lobo.hgb.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.46331475202839
+  },
+  "control.lobo.hgb.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": 0.3960349383042383
+  },
+  "control.lobo.ridge.cls_auc": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.726279704839928
+  },
+  "control.lobo.ridge.cls_brier": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.001247307148018427
+  },
+  "control.lobo.ridge.cls_n": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 17215
+  },
+  "control.lobo.ridge.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 17211
+  },
+  "control.lobo.ridge.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 17209
+  },
+  "control.lobo.ridge.cls_precision": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.9997675634842234
+  },
+  "control.lobo.ridge.cls_recall": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.9996513857416769
+  },
+  "control.lobo.ridge.mae_pooled": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.440472365335671
+  },
+  "control.lobo.ridge.n_folds": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 35
+  },
+  "control.lobo.ridge.n_oof": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 17215
+  },
+  "control.lobo.ridge.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.6491008888643557
+  },
+  "control.lobo.ridge.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": -0.4515863610188313
+  },
+  "control.lobo.ridge.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": -5.9250002581611785
+  },
+  "control.lobo.ridge.r2_pooled": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.39931604644809715
+  },
+  "control.lobo.ridge.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.9954233106415599
+  },
+  "control.lobo.ridge.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.49206271507811183
+  },
+  "control.lobo.ridge.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.26900190251870226
+  },
+  "control.lobo.ridge.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.4023550672600226
+  },
+  "control.lobo.ridge.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.5550768648370266
+  },
+  "control.lobo.ridge.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:37:52+00:00",
+    "source": "45_control.py",
+    "value": 0.5562663492515523
+  },
+  "control.lodo.hgb.cls_auc": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.686981208208439
+  },
+  "control.lodo.hgb.cls_brier": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.00025465549439944007
+  },
+  "control.lodo.hgb.cls_n": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 17352
+  },
+  "control.lodo.hgb.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 17348
+  },
+  "control.lodo.hgb.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 17352
+  },
+  "control.lodo.hgb.cls_precision": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.9997694790225911
+  },
+  "control.lodo.hgb.cls_recall": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 1.0
+  },
+  "control.lodo.hgb.mae_pooled": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.2665284593845425
+  },
+  "control.lodo.hgb.n_folds": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 36
+  },
+  "control.lodo.hgb.n_oof": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 17352
+  },
+  "control.lodo.hgb.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.6887659817325573
+  },
+  "control.lodo.hgb.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": -0.15299710188477944
+  },
+  "control.lodo.hgb.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": -11.680973578731859
+  },
+  "control.lodo.hgb.r2_pooled": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.7385514335604249
+  },
+  "control.lodo.hgb.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.8428821547050207
+  },
+  "control.lodo.hgb.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.27719158656509896
+  },
+  "control.lodo.hgb.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.13034066689449084
+  },
+  "control.lodo.hgb.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.2327243490478414
+  },
+  "control.lodo.hgb.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.3766206316186361
+  },
+  "control.lodo.hgb.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:37:51+00:00",
+    "source": "45_control.py",
+    "value": 0.36682018081491313
+  },
+  "control.lodo.ridge.cls_auc": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.7068538160018445
+  },
+  "control.lodo.ridge.cls_brier": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.0012918494184009513
+  },
+  "control.lodo.ridge.cls_n": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 17352
+  },
+  "control.lodo.ridge.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 17348
+  },
+  "control.lodo.ridge.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 17342
+  },
+  "control.lodo.ridge.cls_precision": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.9997693460961827
+  },
+  "control.lodo.ridge.cls_recall": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.9994235646760433
+  },
+  "control.lodo.ridge.mae_pooled": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.4199591158888802
+  },
+  "control.lodo.ridge.n_folds": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 36
+  },
+  "control.lodo.ridge.n_oof": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 17352
+  },
+  "control.lodo.ridge.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.43524175204391635
+  },
+  "control.lodo.ridge.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": -0.6325804237647238
+  },
+  "control.lodo.ridge.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": -120.03550041140693
+  },
+  "control.lodo.ridge.r2_pooled": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.43800543364978795
+  },
+  "control.lodo.ridge.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 1.1514290024659908
+  },
+  "control.lodo.ridge.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.44919391530341074
+  },
+  "control.lodo.ridge.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.12240566759027795
+  },
+  "control.lodo.ridge.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.3182734233186031
+  },
+  "control.lodo.ridge.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.6116883739855162
+  },
+  "control.lodo.ridge.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:37:00+00:00",
+    "source": "45_control.py",
+    "value": 0.5378066233580371
+  },
+  "control.n_basins_heldout": {
+    "recorded_at": "2026-10-12T18:36:39+00:00",
+    "source": "45_control.py",
+    "value": 35
+  },
+  "control.n_datasets_heldout": {
+    "recorded_at": "2026-10-12T18:36:39+00:00",
+    "source": "45_control.py",
+    "value": 36
+  },
+  "control.n_features": {
+    "recorded_at": "2026-10-12T18:36:39+00:00",
+    "source": "45_control.py",
+    "value": 15
+  },
+  "control.n_wells": {
+    "recorded_at": "2026-10-12T18:36:39+00:00",
+    "source": "45_control.py",
+    "value": 17401
+  },
+  "control.passes": {
+    "recorded_at": "2026-10-12T18:38:42+00:00",
+    "source": "45_control.py",
+    "value": "passes"
+  },
+  "control.random.hgb.cls_auc": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.7404884622508351
+  },
+  "control.random.hgb.cls_brier": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.00023091080961661878
+  },
+  "control.random.hgb.cls_n": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 52203
+  },
+  "control.random.hgb.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 52191
+  },
+  "control.random.hgb.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 52203
+  },
+  "control.random.hgb.cls_precision": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.9997701281535544
+  },
+  "control.random.hgb.cls_recall": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 1.0
+  },
+  "control.random.hgb.mae_pooled": {
+    "recorded_at": "2026-10-12T18:36:58+00:00",
+    "source": "45_control.py",
+    "value": 0.20233396520251812
+  },
+  "control.random.hgb.n_folds": {
+    "recorded_at": "2026-10-12T18:36:58+00:00",
+    "source": "45_control.py",
+    "value": 15
+  },
+  "control.random.hgb.n_oof": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 52203
+  },
+  "control.random.hgb.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.8445156280813403
+  },
+  "control.random.hgb.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.8309717379909947
+  },
+  "control.random.hgb.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.8221995467977599
+  },
+  "control.random.hgb.r2_pooled": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.8313480072237552
+  },
+  "control.random.hgb.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.30266672346811513
+  },
+  "control.random.hgb.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.29500197748929013
+  },
+  "control.random.hgb.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.28265673788143897
+  },
+  "control.random.hgb.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.29146852470701934
+  },
+  "control.random.hgb.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.29886239393056
+  },
+  "control.random.hgb.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:36:58+00:00",
+    "source": "45_control.py",
+    "value": 0.2949763078917481
+  },
+  "control.random.hgb.rmse_rep_max": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.29617874611756806
+  },
+  "control.random.hgb.rmse_rep_min": {
+    "recorded_at": "2026-10-12T18:36:59+00:00",
+    "source": "45_control.py",
+    "value": 0.2938871973655046
+  },
+  "control.random.ridge.cls_auc": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.777214142923748
+  },
+  "control.random.ridge.cls_brier": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.0006786242083712738
+  },
+  "control.random.ridge.cls_n": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 52203
+  },
+  "control.random.ridge.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 52191
+  },
+  "control.random.ridge.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 52197
+  },
+  "control.random.ridge.cls_precision": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.9997701017299845
+  },
+  "control.random.ridge.cls_recall": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.9998850376501696
+  },
+  "control.random.ridge.mae_pooled": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.37772520567863704
+  },
+  "control.random.ridge.n_folds": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 15
+  },
+  "control.random.ridge.n_oof": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 52203
+  },
+  "control.random.ridge.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.5598741333082252
+  },
+  "control.random.ridge.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.5426775626416269
+  },
+  "control.random.ridge.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.5129952004986291
+  },
+  "control.random.ridge.r2_pooled": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.5404023806749028
+  },
+  "control.random.ridge.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.5025574443174471
+  },
+  "control.random.ridge.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.48471633152369087
+  },
+  "control.random.ridge.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.473731068981576
+  },
+  "control.random.ridge.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.479771337337543
+  },
+  "control.random.ridge.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.4935523447851681
+  },
+  "control.random.ridge.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.48694541625030835
+  },
+  "control.random.ridge.rmse_rep_max": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.48703364507006736
+  },
+  "control.random.ridge.rmse_rep_min": {
+    "recorded_at": "2026-10-12T18:36:41+00:00",
+    "source": "45_control.py",
+    "value": 0.48678281111173743
+  },
+  "control.target_sd": {
+    "note": "SD of log10 TDS; RMSE of a mean predictor",
+    "recorded_at": "2026-10-12T18:36:39+00:00",
+    "source": "45_control.py",
+    "value": 0.7182760684753325
+  },
+  "env.cairn_commit": {
+    "recorded_at": "2026-10-12T18:43:40+00:00",
+    "source": "60_docs.py",
+    "value": "1d6e81093eeb4f81cd36d77fa1a47903f0e3be91"
+  },
+  "figures.n": {
+    "recorded_at": "2026-10-12T18:38:45+00:00",
+    "source": "50_figures.py",
+    "value": 7
+  },
+  "manifest.archive_bytes": {
+    "recorded_at": "2026-10-12T18:39:34+00:00",
+    "source": "00_profile.py",
+    "unit": "bytes",
+    "value": 80625044
+  },
+  "manifest.archive_http_status": {
+    "recorded_at": "2026-10-12T18:39:34+00:00",
+    "source": "00_profile.py",
+    "value": "HTTP/2 200"
+  },
+  "manifest.archive_sha256": {
+    "recorded_at": "2026-10-12T18:39:34+00:00",
+    "source": "00_profile.py",
+    "value": "f201cdfdab7e3a29b4e3422a74af8e116db347730a4e0e00e0e11c53d17f7c79"
+  },
+  "manifest.download_date": {
+    "recorded_at": "2026-10-12T18:39:34+00:00",
+    "source": "00_profile.py",
+    "value": "Mon, 12 Oct 2026 17:47:15 GMT"
+  },
+  "manifest.extract_columns": {
+    "recorded_at": "2026-10-12T18:39:34+00:00",
+    "source": "00_profile.py",
+    "value": 68
+  },
+  "manifest.extract_rows": {
+    "recorded_at": "2026-10-12T18:39:34+00:00",
+    "source": "00_profile.py",
+    "unit": "rows",
+    "value": 113135
+  },
+  "manifest.n_archive_files": {
+    "recorded_at": "2026-10-12T18:39:34+00:00",
+    "source": "00_profile.py",
+    "value": 4
+  },
+  "miss.auc": {
+    "note": "5-fold grouped-by-well logistic regression, lithium measured",
+    "recorded_at": "2026-10-12T18:35:42+00:00",
+    "source": "20_missingness.py",
+    "value": 0.7493269216224696
+  },
+  "miss.auc_max": {
+    "recorded_at": "2026-10-12T18:35:42+00:00",
+    "source": "20_missingness.py",
+    "value": 0.7660340557309882
+  },
+  "miss.auc_min": {
+    "recorded_at": "2026-10-12T18:35:42+00:00",
+    "source": "20_missingness.py",
+    "value": 0.7401403389756234
+  },
+  "miss.basin_top_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": "Gulf Coast"
+  },
+  "miss.basin_top_measured_share": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.12707360283459496
+  },
+  "miss.basin_top_measured_share_not": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.12512485159150444
+  },
+  "miss.dataset_top_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": "USGSBREIT"
+  },
+  "miss.dataset_top_measured_share": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.5772266065388951
+  },
+  "miss.dataset_top_measured_share_not": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.6242108437140758
+  },
+  "miss.datasets_all_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 14
+  },
+  "miss.datasets_none_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 25
+  },
+  "miss.datasets_total": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 62
+  },
+  "miss.date_missing_share_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.30665163472378804
+  },
+  "miss.date_missing_share_not_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.24205190057101936
+  },
+  "miss.decade_median_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 1960.0
+  },
+  "miss.decade_median_not_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 1960.0
+  },
+  "miss.decade_top_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": "1960"
+  },
+  "miss.decade_top_measured_share": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.46368175229505554
+  },
+  "miss.decade_top_measured_share_not": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.1632870361645591
+  },
+  "miss.depth_median_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "unit": "ft",
+    "value": 6416.5
+  },
+  "miss.depth_median_not_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "unit": "ft",
+    "value": 5832.0
+  },
+  "miss.depth_missing_share_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.22113061684651314
+  },
+  "miss.depth_missing_share_not_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.29385824397414395
+  },
+  "miss.n_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "unit": "rows",
+    "value": 6209
+  },
+  "miss.n_not_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "unit": "rows",
+    "value": 106126
+  },
+  "miss.n_rows": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "unit": "rows",
+    "value": 112335
+  },
+  "miss.playtype_top_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": "Sedimentary"
+  },
+  "miss.playtype_top_measured_share": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.7822515703011758
+  },
+  "miss.playtype_top_measured_share_not": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.8268284868929385
+  },
+  "miss.share_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.055272176970668094
+  },
+  "miss.smd_log_depth": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.09445856483321156
+  },
+  "miss.smd_log_tds": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.10567795849285655
+  },
+  "miss.tds_median_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "unit": "mg/L",
+    "value": 53978.0
+  },
+  "miss.tds_median_not_measured": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "unit": "mg/L",
+    "value": 42460.0
+  },
+  "miss.usgsbreit_rows": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 69829
+  },
+  "miss.usgsbreit_share_li": {
+    "recorded_at": "2026-10-12T18:35:41+00:00",
+    "source": "20_missingness.py",
+    "value": 0.0513253805725415
+  },
+  "miss.verdict": {
+    "recorded_at": "2026-10-12T18:35:42+00:00",
+    "source": "20_missingness.py",
+    "value": "missing is not random"
+  },
+  "model.lobo.hgb.best_basin": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": "Wasatch Plateau"
+  },
+  "model.lobo.hgb.best_basin_r2": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.1283010116903096
+  },
+  "model.lobo.hgb.best_basin_rmse": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.26913490972504217
+  },
+  "model.lobo.hgb.bias_abs_max": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 1.0670088502358135
+  },
+  "model.lobo.hgb.bias_abs_median": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.13135648128506305
+  },
+  "model.lobo.hgb.bias_max_basin": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": "Amarillo Arch"
+  },
+  "model.lobo.hgb.calib_max_gap": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.811542075556771
+  },
+  "model.lobo.hgb.calib_n_bins_used": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 9
+  },
+  "model.lobo.hgb.cls_auc": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.8832973376450162
+  },
+  "model.lobo.hgb.cls_brier": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.05393721353312911
+  },
+  "model.lobo.hgb.cls_n": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 3747
+  },
+  "model.lobo.hgb.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 244
+  },
+  "model.lobo.hgb.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 110
+  },
+  "model.lobo.hgb.cls_precision": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.2818181818181818
+  },
+  "model.lobo.hgb.cls_recall": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.12704918032786885
+  },
+  "model.lobo.hgb.mae_pooled": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.37674126517325895
+  },
+  "model.lobo.hgb.n_basins_r2_ge_0_3": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 6
+  },
+  "model.lobo.hgb.n_basins_r2_positive": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 14
+  },
+  "model.lobo.hgb.n_folds": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 22
+  },
+  "model.lobo.hgb.n_oof": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 3747
+  },
+  "model.lobo.hgb.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.6216768133120834
+  },
+  "model.lobo.hgb.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.12403368258524539
+  },
+  "model.lobo.hgb.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": -4.609649181938336
+  },
+  "model.lobo.hgb.r2_pooled": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.5471506268768827
+  },
+  "model.lobo.hgb.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 1.1893765270812877
+  },
+  "model.lobo.hgb.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.4473213947120911
+  },
+  "model.lobo.hgb.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.26913490972504217
+  },
+  "model.lobo.hgb.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.36381140392323524
+  },
+  "model.lobo.hgb.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.5102052201689975
+  },
+  "model.lobo.hgb.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.511984007212741
+  },
+  "model.lobo.hgb.worst_basin": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": "Amarillo Arch"
+  },
+  "model.lobo.hgb.worst_basin_r2": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": -1.9645274642042545
+  },
+  "model.lobo.hgb.worst_basin_rmse": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 1.1893765270812877
+  },
+  "model.lobo.ridge.cls_auc": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.8714322150100849
+  },
+  "model.lobo.ridge.cls_brier": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.05372271388365482
+  },
+  "model.lobo.ridge.cls_n": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 3747
+  },
+  "model.lobo.ridge.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 244
+  },
+  "model.lobo.ridge.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 14
+  },
+  "model.lobo.ridge.cls_precision": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.0
+  },
+  "model.lobo.ridge.cls_recall": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.0
+  },
+  "model.lobo.ridge.mae_pooled": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.37131151664316486
+  },
+  "model.lobo.ridge.n_folds": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 22
+  },
+  "model.lobo.ridge.n_oof": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 3747
+  },
+  "model.lobo.ridge.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.6863088801780883
+  },
+  "model.lobo.ridge.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": -0.027413043063421294
+  },
+  "model.lobo.ridge.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": -4.175047015255259
+  },
+  "model.lobo.ridge.r2_pooled": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.5577753823115723
+  },
+  "model.lobo.ridge.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 1.1131557048447374
+  },
+  "model.lobo.ridge.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.4557964966346594
+  },
+  "model.lobo.ridge.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.2617657476127234
+  },
+  "model.lobo.ridge.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.37173198415988956
+  },
+  "model.lobo.ridge.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.5783518190117699
+  },
+  "model.lobo.ridge.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:36:24+00:00",
+    "source": "40_model.py",
+    "value": 0.5059422727378015
+  },
+  "model.lodo.hgb.best_dataset": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": "TROUTSTUEBER"
+  },
+  "model.lodo.hgb.best_dataset_rmse": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 0.18380272082463034
+  },
+  "model.lodo.hgb.calib_max_gap": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.24076064674722564
+  },
+  "model.lodo.hgb.calib_n_bins_used": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 9
+  },
+  "model.lodo.hgb.cls_auc": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.8978652815604797
+  },
+  "model.lodo.hgb.cls_brier": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.04624558155100082
+  },
+  "model.lodo.hgb.cls_n": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 3852
+  },
+  "model.lodo.hgb.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 235
+  },
+  "model.lodo.hgb.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 123
+  },
+  "model.lodo.hgb.cls_precision": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.6666666666666666
+  },
+  "model.lodo.hgb.cls_recall": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.34893617021276596
+  },
+  "model.lodo.hgb.datasets_r2_negative": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": "TASKERUTICA, ENGLEEAGLEFORD, PERMIAN, FERRON, MICHIGAN, SHOUAKARSTASH, MISSISSIPPI, POWDERRIVERCBM, BRYNDZIAWOLFCAMP, SHIHMARCELLUS, ROWANAKOB, WILLISTON"
+  },
+  "model.lodo.hgb.mae_pooled": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.3801357088525675
+  },
+  "model.lodo.hgb.n_datasets_r2_positive": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 12
+  },
+  "model.lodo.hgb.n_folds": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 24
+  },
+  "model.lodo.hgb.n_oof": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 3852
+  },
+  "model.lodo.hgb.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.8760508374775325
+  },
+  "model.lodo.hgb.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": -0.025780306851731383
+  },
+  "model.lodo.hgb.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": -12.623450350939574
+  },
+  "model.lodo.hgb.r2_pooled": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.5304735791325763
+  },
+  "model.lodo.hgb.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 1.7666947200398486
+  },
+  "model.lodo.hgb.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.3869660051345484
+  },
+  "model.lodo.hgb.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.18380272082463034
+  },
+  "model.lodo.hgb.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.27056892145349026
+  },
+  "model.lodo.hgb.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.5572099625953955
+  },
+  "model.lodo.hgb.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:36:23+00:00",
+    "source": "40_model.py",
+    "value": 0.5138863054103073
+  },
+  "model.lodo.hgb.worst_dataset": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": "WILLISTON"
+  },
+  "model.lodo.hgb.worst_dataset_rmse": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 1.7666947200398486
+  },
+  "model.lodo.ridge.cls_auc": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.8810545944387909
+  },
+  "model.lodo.ridge.cls_brier": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.04866553527467869
+  },
+  "model.lodo.ridge.cls_n": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 3852
+  },
+  "model.lodo.ridge.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 235
+  },
+  "model.lodo.ridge.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 11
+  },
+  "model.lodo.ridge.cls_precision": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.09090909090909091
+  },
+  "model.lodo.ridge.cls_recall": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.00425531914893617
+  },
+  "model.lodo.ridge.mae_pooled": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.37766464397234106
+  },
+  "model.lodo.ridge.n_folds": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 24
+  },
+  "model.lodo.ridge.n_oof": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 3852
+  },
+  "model.lodo.ridge.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.7304031739835416
+  },
+  "model.lodo.ridge.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": -0.17487485874706965
+  },
+  "model.lodo.ridge.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": -25.13967145718445
+  },
+  "model.lodo.ridge.r2_pooled": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.5394261058739895
+  },
+  "model.lodo.ridge.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 1.8455879435912093
+  },
+  "model.lodo.ridge.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.3717010482569323
+  },
+  "model.lodo.ridge.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.14262753146769996
+  },
+  "model.lodo.ridge.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.3401050173648844
+  },
+  "model.lodo.ridge.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.5027673374700571
+  },
+  "model.lodo.ridge.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:36:09+00:00",
+    "source": "40_model.py",
+    "value": 0.5089635553116516
+  },
+  "model.n_basins_heldout": {
+    "recorded_at": "2026-10-12T18:35:55+00:00",
+    "source": "40_model.py",
+    "value": 22
+  },
+  "model.n_datasets_heldout": {
+    "recorded_at": "2026-10-12T18:35:55+00:00",
+    "source": "40_model.py",
+    "value": 24
+  },
+  "model.n_features": {
+    "recorded_at": "2026-10-12T18:35:55+00:00",
+    "source": "40_model.py",
+    "value": 16
+  },
+  "model.n_wells": {
+    "recorded_at": "2026-10-12T18:35:55+00:00",
+    "source": "40_model.py",
+    "value": 3921
+  },
+  "model.random.hgb.calib_max_gap": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.17097593071598308
+  },
+  "model.random.hgb.calib_n_bins_used": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 10
+  },
+  "model.random.hgb.cls_auc": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.9341368135334852
+  },
+  "model.random.hgb.cls_brier": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.03596438395070092
+  },
+  "model.random.hgb.cls_n": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 11763
+  },
+  "model.random.hgb.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 747
+  },
+  "model.random.hgb.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 467
+  },
+  "model.random.hgb.cls_precision": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.7815845824411135
+  },
+  "model.random.hgb.cls_recall": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.4886211512717537
+  },
+  "model.random.hgb.mae_pooled": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.2515436992034925
+  },
+  "model.random.hgb.n_folds": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 15
+  },
+  "model.random.hgb.n_oof": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 11763
+  },
+  "model.random.hgb.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.8083493883987771
+  },
+  "model.random.hgb.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.7636745275336014
+  },
+  "model.random.hgb.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.7119232125116266
+  },
+  "model.random.hgb.r2_pooled": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.7637820421013712
+  },
+  "model.random.hgb.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.4107843664100649
+  },
+  "model.random.hgb.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.37462351101793623
+  },
+  "model.random.hgb.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.32757273848657603
+  },
+  "model.random.hgb.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.3542636598501454
+  },
+  "model.random.hgb.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.3820805016932718
+  },
+  "model.random.hgb.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.36866855599530673
+  },
+  "model.random.hgb.rmse_rep_max": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.36965413197751634
+  },
+  "model.random.hgb.rmse_rep_min": {
+    "recorded_at": "2026-10-12T18:36:08+00:00",
+    "source": "40_model.py",
+    "value": 0.3674040721433384
+  },
+  "model.random.ridge.cls_auc": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.8987991423452222
+  },
+  "model.random.ridge.cls_brier": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.04737461575782742
+  },
+  "model.random.ridge.cls_n": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 11763
+  },
+  "model.random.ridge.cls_n_pos": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 747
+  },
+  "model.random.ridge.cls_n_pred_pos": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 14
+  },
+  "model.random.ridge.cls_precision": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.0
+  },
+  "model.random.ridge.cls_recall": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.0
+  },
+  "model.random.ridge.mae_pooled": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.32924227101400266
+  },
+  "model.random.ridge.n_folds": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 15
+  },
+  "model.random.ridge.n_oof": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 11763
+  },
+  "model.random.ridge.r2_fold_max": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.6924719939022228
+  },
+  "model.random.ridge.r2_fold_median": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.6326369050298888
+  },
+  "model.random.ridge.r2_fold_min": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.5940693769704384
+  },
+  "model.random.ridge.r2_pooled": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.6409450775800339
+  },
+  "model.random.ridge.rmse_fold_max": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.4876246840304069
+  },
+  "model.random.ridge.rmse_fold_median": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.45836830647933213
+  },
+  "model.random.ridge.rmse_fold_min": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.4109039680440866
+  },
+  "model.random.ridge.rmse_fold_q25": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.44483146115828576
+  },
+  "model.random.ridge.rmse_fold_q75": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.46985922243923217
+  },
+  "model.random.ridge.rmse_pooled": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.45452741714987693
+  },
+  "model.random.ridge.rmse_rep_max": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.4551982832609084
+  },
+  "model.random.ridge.rmse_rep_min": {
+    "recorded_at": "2026-10-12T18:35:57+00:00",
+    "source": "40_model.py",
+    "value": 0.45407924810611117
+  },
+  "model.rmse_ratio_lobo_random_hgb": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 1.38873792973887
+  },
+  "model.rmse_ratio_lodo_random_hgb": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": 1.3938978441569323
+  },
+  "model.target_sd": {
+    "note": "SD of log10 Li; RMSE of a mean predictor",
+    "recorded_at": "2026-10-12T18:35:55+00:00",
+    "source": "40_model.py",
+    "value": 0.7585420177009661
+  },
+  "model.verdict": {
+    "recorded_at": "2026-10-12T18:36:37+00:00",
+    "source": "40_model.py",
+    "value": "useful out of basin"
+  },
+  "nondetect.B.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.B.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.B.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.B.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 4943
+  },
+  "nondetect.B.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Ba.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Ba.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Ba.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Ba.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 12707
+  },
+  "nondetect.Ba.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 5
+  },
+  "nondetect.Br.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Br.negative": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Br.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Br.nonempty": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 6689
+  },
+  "nondetect.Br.zero": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.CO3.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.CO3.negative": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.CO3.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.CO3.nonempty": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 11285
+  },
+  "nondetect.CO3.zero": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 4
+  },
+  "nondetect.Ca.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Ca.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Ca.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Ca.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 106183
+  },
+  "nondetect.Ca.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Cl.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Cl.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Cl.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Cl.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 107382
+  },
+  "nondetect.Cl.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.HCO3.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.HCO3.negative": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.HCO3.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.HCO3.nonempty": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 97480
+  },
+  "nondetect.HCO3.zero": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.I.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.I.negative": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.I.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.I.nonempty": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 3389
+  },
+  "nondetect.I.zero": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.K.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.K.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.K.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.K.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 31764
+  },
+  "nondetect.K.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Li.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Li.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Li.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Li.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 6416
+  },
+  "nondetect.Li.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Mg.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Mg.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Mg.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Mg.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 102002
+  },
+  "nondetect.Mg.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Na.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Na.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Na.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Na.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 95204
+  },
+  "nondetect.Na.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.SO4.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.SO4.negative": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.SO4.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.SO4.nonempty": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 92133
+  },
+  "nondetect.SO4.zero": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Sr.lt_prefixed": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Sr.negative": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Sr.non_numeric": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.Sr.nonempty": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 7900
+  },
+  "nondetect.Sr.zero": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.dictionary_detection_fields": {
+    "note": "dictionary descriptions mentioning detection",
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0
+  },
+  "nondetect.dictionary_fields": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 209
+  },
+  "nondetect.li_min": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "unit": "mg/L",
+    "value": 0.00124
+  },
+  "nondetect.li_n_below_0_1": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 175
+  },
+  "nondetect.li_n_below_1": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 566
+  },
+  "nondetect.li_share_integer": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 0.595074812967581
+  },
+  "nondetect.remarks_detect_rows": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 3
+  },
+  "prepare.cb.balanced_by_construction_li_rows": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "value": 995
+  },
+  "prepare.cb.balanced_by_construction_rows": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "value": 46537
+  },
+  "prepare.cb.balanced_by_construction_top_dataset": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "value": "USGSBREIT"
+  },
+  "prepare.cb.balanced_by_construction_top_dataset_rows": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "value": 38589
+  },
+  "prepare.cb.li_rows_removed": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "value": 709
+  },
+  "prepare.cb.null_rows": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 5025
+  },
+  "prepare.cb.removed_rows": {
+    "note": "|CHARGEBAL| > 10.0",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 19852
+  },
+  "prepare.cb.rows_kept_tol10": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 87458
+  },
+  "prepare.cb.rows_kept_tol15": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 89142
+  },
+  "prepare.cb.rows_kept_tol5": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 83370
+  },
+  "prepare.cb.tolerance": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "percent",
+    "value": 10.0
+  },
+  "prepare.excl.basin_unknown": {
+    "note": "BASIN Unknown",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 1
+  },
+  "prepare.excl.formation_injected_fluid": {
+    "note": "FORMATION names an injected or fracturing fluid",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 1
+  },
+  "prepare.excl.no_coordinates": {
+    "note": "no latitude or longitude",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 4
+  },
+  "prepare.excl.non_us_state": {
+    "note": "STATE is a Canadian province",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 202
+  },
+  "prepare.excl.playtype_not_produced_water": {
+    "note": "PLAYTYPE not in Sedimentary, Shale, Coal (Geothermal, Injection)",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 520
+  },
+  "prepare.excl.sg_out_of_range": {
+    "note": "SG outside 0.9 to 1.3",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 65
+  },
+  "prepare.excl.welltype_injection_water_co2": {
+    "note": "WELLTYPE in Injection, Water, CO2",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 7
+  },
+  "prepare.rows_excluded": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 800
+  },
+  "prepare.rows_included": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 112335
+  },
+  "prepare.rows_raw": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 113135
+  },
+  "prepare.sg.estimated_rows": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 49583
+  },
+  "prepare.sg.ppm_estimated_li_rows": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 238
+  },
+  "prepare.sg.ppm_estimated_rows": {
+    "note": "ppm rows converted with a regression-estimated SG",
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 16932
+  },
+  "prepare.sg.ppm_rows": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 24077
+  },
+  "prepare.sg.share_estimated": {
+    "recorded_at": "2026-10-12T18:35:35+00:00",
+    "source": "10_prepare.py",
+    "value": 0.44138514265366985
+  },
+  "prepare.wells.li_max_rows_per_well": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 110
+  },
+  "prepare.wells.li_rows_collapsed": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 1359
+  },
+  "prepare.wells.li_rows_in": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 5500
+  },
+  "prepare.wells.li_rows_key_api": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 3907
+  },
+  "prepare.wells.li_rows_key_coords": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 184
+  },
+  "prepare.wells.li_rows_key_row": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 427
+  },
+  "prepare.wells.li_rows_key_wellname": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 982
+  },
+  "prepare.wells.li_wells_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 1019
+  },
+  "prepare.wells.li_wells_in_li_focused": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 11
+  },
+  "prepare.wells.li_wells_key_api": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 2814
+  },
+  "prepare.wells.li_wells_key_coords": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 138
+  },
+  "prepare.wells.li_wells_key_row": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 427
+  },
+  "prepare.wells.li_wells_key_wellname": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 762
+  },
+  "prepare.wells.li_wells_multi_row": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 622
+  },
+  "prepare.wells.li_wells_n_basins": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 49
+  },
+  "prepare.wells.li_wells_n_datasets": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 35
+  },
+  "prepare.wells.li_wells_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 330
+  },
+  "prepare.wells.li_wells_share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 0.2460758270949046
+  },
+  "prepare.wells.li_wells_tds_brine_share": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 0.4264670369475972
+  },
+  "prepare.wells.li_wells_with_mg": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 4097
+  },
+  "prepare.wells.li_wells_without_mg": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 44
+  },
+  "prepare.wells.n_wells": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 54957
+  },
+  "prepare.wells.n_wells_li": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "value": 4141
+  },
+  "prepare.wells.rows_collapsed": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 32501
+  },
+  "prepare.wells.rows_in": {
+    "recorded_at": "2026-10-12T18:35:36+00:00",
+    "source": "10_prepare.py",
+    "unit": "rows",
+    "value": 87458
+  },
+  "profile.columns": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "value": 68
+  },
+  "profile.idusgs_unique": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": true
+  },
+  "profile.li_rows": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 6416
+  },
+  "profile.n_basins": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 71
+  },
+  "profile.n_datasets": {
+    "recorded_at": "2026-10-12T18:39:36+00:00",
+    "source": "00_profile.py",
+    "value": 63
+  },
+  "profile.rows": {
+    "recorded_at": "2026-10-12T18:39:35+00:00",
+    "source": "00_profile.py",
+    "unit": "rows",
+    "value": 113135
+  },
+  "screen.adj.basins_touched": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Appalachian (8), Arkla (3)"
+  },
+  "screen.adj.datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "STANDARDLITHIUM, TETRA, TROUTSTEUBER, NYLITHIUM"
+  },
+  "screen.adj.moved": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "none"
+  },
+  "screen.adj.n_basins_ranked": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 22
+  },
+  "screen.adj.n_li_wells_removed": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 11
+  },
+  "screen.adj.n_reversed_pairs": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0
+  },
+  "screen.adj.robust": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "robust"
+  },
+  "screen.adj.top5_overlap": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 5
+  },
+  "screen.basin1.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.37037037037037035
+  },
+  "screen.basin1.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 299.0
+  },
+  "screen.basin1.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 181.0
+  },
+  "screen.basin1.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 34.0
+  },
+  "screen.basin1.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 27
+  },
+  "screen.basin1.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.5555555555555556
+  },
+  "screen.basin1.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.18518518518518517
+  },
+  "screen.basin1.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.37037037037037035
+  },
+  "screen.basin1.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 299.0
+  },
+  "screen.basin1.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 181.0
+  },
+  "screen.basin1.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 34.0
+  },
+  "screen.basin1.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 8.963210702341136
+  },
+  "screen.basin1.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 1
+  },
+  "screen.basin1.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 10
+  },
+  "screen.basin1.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 27
+  },
+  "screen.basin1.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Amarillo Arch"
+  },
+  "screen.basin1.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 1.0
+  },
+  "screen.basin1.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin2.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.07936507936507936
+  },
+  "screen.basin2.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 108.0
+  },
+  "screen.basin2.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 67.0
+  },
+  "screen.basin2.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 21.5
+  },
+  "screen.basin2.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 252
+  },
+  "screen.basin2.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.16666666666666666
+  },
+  "screen.basin2.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.03225806451612903
+  },
+  "screen.basin2.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.09019607843137255
+  },
+  "screen.basin2.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 111.0
+  },
+  "screen.basin2.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 67.0
+  },
+  "screen.basin2.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 21.0
+  },
+  "screen.basin2.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 42.92986918604652
+  },
+  "screen.basin2.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 5
+  },
+  "screen.basin2.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 23
+  },
+  "screen.basin2.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 255
+  },
+  "screen.basin2.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Arkla"
+  },
+  "screen.basin2.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.21568627450980393
+  },
+  "screen.basin2.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin3.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.048561151079136694
+  },
+  "screen.basin3.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 67.005
+  },
+  "screen.basin3.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 54.650000000000006
+  },
+  "screen.basin3.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 47.55
+  },
+  "screen.basin3.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 556
+  },
+  "screen.basin3.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.09731987624086294
+  },
+  "screen.basin3.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.014279448621553885
+  },
+  "screen.basin3.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.047872340425531915
+  },
+  "screen.basin3.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 67.10249999999999
+  },
+  "screen.basin3.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 54.705
+  },
+  "screen.basin3.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 47.55
+  },
+  "screen.basin3.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 44.94212962962963
+  },
+  "screen.basin3.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 9
+  },
+  "screen.basin3.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 27
+  },
+  "screen.basin3.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 564
+  },
+  "screen.basin3.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Appalachian"
+  },
+  "screen.basin3.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.5
+  },
+  "screen.basin3.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.2375886524822695
+  },
+  "screen.basin4.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin4.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 32.0
+  },
+  "screen.basin4.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 19.0
+  },
+  "screen.basin4.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 11.0
+  },
+  "screen.basin4.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 145
+  },
+  "screen.basin4.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin4.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin4.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin4.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 32.0
+  },
+  "screen.basin4.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 19.0
+  },
+  "screen.basin4.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 11.0
+  },
+  "screen.basin4.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 204.42307692307693
+  },
+  "screen.basin4.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 3
+  },
+  "screen.basin4.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0
+  },
+  "screen.basin4.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 145
+  },
+  "screen.basin4.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Michigan"
+  },
+  "screen.basin4.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.6068965517241379
+  },
+  "screen.basin4.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin5.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin5.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 21.79
+  },
+  "screen.basin5.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 18.2125
+  },
+  "screen.basin5.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 14.5
+  },
+  "screen.basin5.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 76
+  },
+  "screen.basin5.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin5.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin5.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin5.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 21.79
+  },
+  "screen.basin5.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 18.2125
+  },
+  "screen.basin5.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 14.5
+  },
+  "screen.basin5.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 173.4570225538988
+  },
+  "screen.basin5.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 1
+  },
+  "screen.basin5.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0
+  },
+  "screen.basin5.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 76
+  },
+  "screen.basin5.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Southern Oklahoma"
+  },
+  "screen.basin5.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.7368421052631579
+  },
+  "screen.basin5.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.013157894736842105
+  },
+  "screen.basin6.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin6.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 19.7
+  },
+  "screen.basin6.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 14.15
+  },
+  "screen.basin6.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 4.3
+  },
+  "screen.basin6.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 24
+  },
+  "screen.basin6.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin6.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin6.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin6.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 19.7
+  },
+  "screen.basin6.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 14.15
+  },
+  "screen.basin6.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 4.3
+  },
+  "screen.basin6.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 159.17931737137036
+  },
+  "screen.basin6.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 2
+  },
+  "screen.basin6.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0
+  },
+  "screen.basin6.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 24
+  },
+  "screen.basin6.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Illinois"
+  },
+  "screen.basin6.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.9583333333333334
+  },
+  "screen.basin6.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin7.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.008620689655172414
+  },
+  "screen.basin7.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 17.0
+  },
+  "screen.basin7.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 12.0
+  },
+  "screen.basin7.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 8.925
+  },
+  "screen.basin7.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 348
+  },
+  "screen.basin7.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.020202020202020204
+  },
+  "screen.basin7.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin7.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.008620689655172414
+  },
+  "screen.basin7.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 17.0
+  },
+  "screen.basin7.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 12.0
+  },
+  "screen.basin7.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 8.925
+  },
+  "screen.basin7.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 88.78048780487805
+  },
+  "screen.basin7.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 3
+  },
+  "screen.basin7.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 3
+  },
+  "screen.basin7.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 348
+  },
+  "screen.basin7.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Permian"
+  },
+  "screen.basin7.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.10632183908045977
+  },
+  "screen.basin7.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.008620689655172414
+  },
+  "screen.basin8.adj.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.036065573770491806
+  },
+  "screen.basin8.adj.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 62.469
+  },
+  "screen.basin8.adj.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 12.0
+  },
+  "screen.basin8.adj.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 7.803125
+  },
+  "screen.basin8.adj.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 305
+  },
+  "screen.basin8.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.06880733944954129
+  },
+  "screen.basin8.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.basin8.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.036065573770491806
+  },
+  "screen.basin8.median_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 62.469
+  },
+  "screen.basin8.median_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 12.0
+  },
+  "screen.basin8.median_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 7.803125
+  },
+  "screen.basin8.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 34.0
+  },
+  "screen.basin8.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 5
+  },
+  "screen.basin8.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 11
+  },
+  "screen.basin8.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 305
+  },
+  "screen.basin8.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Williston"
+  },
+  "screen.basin8.share_coord_approx": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.10491803278688525
+  },
+  "screen.basin8.share_sg_estimated": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.019672131147540985
+  },
+  "screen.cb.none.moved": {
+    "recorded_at": "2026-10-12T18:35:53+00:00",
+    "source": "30_screen.py",
+    "value": "none"
+  },
+  "screen.cb.none.n_basins_ranked": {
+    "recorded_at": "2026-10-12T18:35:53+00:00",
+    "source": "30_screen.py",
+    "value": 23
+  },
+  "screen.cb.none.n_li_wells": {
+    "recorded_at": "2026-10-12T18:35:53+00:00",
+    "source": "30_screen.py",
+    "value": 4728
+  },
+  "screen.cb.none.n_reversed_pairs": {
+    "recorded_at": "2026-10-12T18:35:53+00:00",
+    "source": "30_screen.py",
+    "value": 0
+  },
+  "screen.cb.none.top5_overlap": {
+    "recorded_at": "2026-10-12T18:35:53+00:00",
+    "source": "30_screen.py",
+    "value": 5
+  },
+  "screen.cb.primary_n_li_wells": {
+    "recorded_at": "2026-10-12T18:35:53+00:00",
+    "source": "30_screen.py",
+    "value": 4141
+  },
+  "screen.cb.robust": {
+    "recorded_at": "2026-10-12T18:35:53+00:00",
+    "source": "30_screen.py",
+    "value": "robust"
+  },
+  "screen.cb.tol15.moved": {
+    "recorded_at": "2026-10-12T18:35:51+00:00",
+    "source": "30_screen.py",
+    "value": "none"
+  },
+  "screen.cb.tol15.n_basins_ranked": {
+    "recorded_at": "2026-10-12T18:35:51+00:00",
+    "source": "30_screen.py",
+    "value": 22
+  },
+  "screen.cb.tol15.n_li_wells": {
+    "recorded_at": "2026-10-12T18:35:51+00:00",
+    "source": "30_screen.py",
+    "value": 4244
+  },
+  "screen.cb.tol15.n_reversed_pairs": {
+    "recorded_at": "2026-10-12T18:35:51+00:00",
+    "source": "30_screen.py",
+    "value": 0
+  },
+  "screen.cb.tol15.top5_overlap": {
+    "recorded_at": "2026-10-12T18:35:51+00:00",
+    "source": "30_screen.py",
+    "value": 5
+  },
+  "screen.cb.tol5.moved": {
+    "recorded_at": "2026-10-12T18:35:49+00:00",
+    "source": "30_screen.py",
+    "value": "none"
+  },
+  "screen.cb.tol5.n_basins_ranked": {
+    "recorded_at": "2026-10-12T18:35:49+00:00",
+    "source": "30_screen.py",
+    "value": 22
+  },
+  "screen.cb.tol5.n_li_wells": {
+    "recorded_at": "2026-10-12T18:35:49+00:00",
+    "source": "30_screen.py",
+    "value": 3810
+  },
+  "screen.cb.tol5.n_reversed_pairs": {
+    "recorded_at": "2026-10-12T18:35:49+00:00",
+    "source": "30_screen.py",
+    "value": 0
+  },
+  "screen.cb.tol5.top5_overlap": {
+    "recorded_at": "2026-10-12T18:35:49+00:00",
+    "source": "30_screen.py",
+    "value": 5
+  },
+  "screen.ceiling_mg_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 10.0
+  },
+  "screen.ds.max_ratio": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 58.51063829787234
+  },
+  "screen.ds.max_ratio_basin": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Powder River"
+  },
+  "screen.ds.median_ratio": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 4.084014002333722
+  },
+  "screen.ds.n_basins_multi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 14
+  },
+  "screen.ds.n_basins_ratio_ge2": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 9
+  },
+  "screen.ds.n_basins_ratio_ge5": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 4
+  },
+  "screen.ds.n_basins_two_datasets_ge5": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 11
+  },
+  "screen.floor_mg_l": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 100.0
+  },
+  "screen.form1.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.6296296296296297
+  },
+  "screen.form1.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "value": 0.25925925925925924
+  },
+  "screen.form1.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "value": 0.4444444444444444
+  },
+  "screen.form1.median_hi": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 340.0
+  },
+  "screen.form1.median_li": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 260.0
+  },
+  "screen.form1.median_lo": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 105.0
+  },
+  "screen.form1.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 7.576923076923077
+  },
+  "screen.form1.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "value": 1
+  },
+  "screen.form1.n_wells": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "value": 27
+  },
+  "screen.form1.name": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "value": "Pennsylvanian - Permian"
+  },
+  "screen.form2.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.4550865800865796
+  },
+  "screen.form2.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form2.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.13636363636363635
+  },
+  "screen.form2.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 220.0
+  },
+  "screen.form2.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 138.5
+  },
+  "screen.form2.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 31.675
+  },
+  "screen.form2.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 32.77494074552898
+  },
+  "screen.form2.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 5
+  },
+  "screen.form2.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 22
+  },
+  "screen.form2.name": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Oriskany"
+  },
+  "screen.form3.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.23529411764705882
+  },
+  "screen.form3.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form3.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.04
+  },
+  "screen.form3.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 400.0
+  },
+  "screen.form3.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 121.0
+  },
+  "screen.form3.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 10.0
+  },
+  "screen.form3.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 20.67669172932331
+  },
+  "screen.form3.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 3
+  },
+  "screen.form3.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 25
+  },
+  "screen.form3.name": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Duperow"
+  },
+  "screen.form4.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.5666666666666667
+  },
+  "screen.form4.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.23333333333333334
+  },
+  "screen.form4.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.4
+  },
+  "screen.form4.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 145.5
+  },
+  "screen.form4.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 108.5
+  },
+  "screen.form4.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 68.65
+  },
+  "screen.form4.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 9.006410256410255
+  },
+  "screen.form4.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 1
+  },
+  "screen.form4.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 30
+  },
+  "screen.form4.name": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Edwards"
+  },
+  "screen.form5.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.21239638809914707
+  },
+  "screen.form5.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.029403214774281806
+  },
+  "screen.form5.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.11981566820276497
+  },
+  "screen.form5.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 107.02499999999998
+  },
+  "screen.form5.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 92.0
+  },
+  "screen.form5.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 64.0
+  },
+  "screen.form5.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 32.0
+  },
+  "screen.form5.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 8
+  },
+  "screen.form5.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 217
+  },
+  "screen.form5.name": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Smackover"
+  },
+  "screen.form6.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.18518518518518517
+  },
+  "screen.form6.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.06108709273182957
+  },
+  "screen.form6.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.12
+  },
+  "screen.form6.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 82.5
+  },
+  "screen.form6.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 66.95
+  },
+  "screen.form6.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 51.75
+  },
+  "screen.form6.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 13.050845686356475
+  },
+  "screen.form6.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 4
+  },
+  "screen.form6.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 150
+  },
+  "screen.form6.name": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Marcellus"
+  },
+  "screen.form7.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form7.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form7.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form7.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 78.2
+  },
+  "screen.form7.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 66.2
+  },
+  "screen.form7.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 57.7
+  },
+  "screen.form7.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 50.96094234345939
+  },
+  "screen.form7.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 4
+  },
+  "screen.form7.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 13
+  },
+  "screen.form7.name": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Medina"
+  },
+  "screen.form8.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form8.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form8.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.form8.median_hi": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 66.0
+  },
+  "screen.form8.median_li": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 53.75
+  },
+  "screen.form8.median_lo": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 43.99875
+  },
+  "screen.form8.mgli_median": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 65.29622594420721
+  },
+  "screen.form8.n_datasets": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 3
+  },
+  "screen.form8.n_wells": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": 254
+  },
+  "screen.form8.name": {
+    "recorded_at": "2026-10-12T18:35:47+00:00",
+    "source": "30_screen.py",
+    "value": "Clinton"
+  },
+  "screen.grid.brine_n_pass": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 91
+  },
+  "screen.grid.loose_n_pass": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 285
+  },
+  "screen.grid.n_cells": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 18
+  },
+  "screen.grid.n_distinct_top3": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 4
+  },
+  "screen.grid.n_pass_max": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 285
+  },
+  "screen.grid.n_pass_min": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 29
+  },
+  "screen.grid.share_pass_max": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 0.06882395556628834
+  },
+  "screen.grid.share_pass_min": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 0.0070031393383240765
+  },
+  "screen.grid.strict_n_pass": {
+    "recorded_at": "2026-10-12T18:35:54+00:00",
+    "source": "30_screen.py",
+    "value": 34
+  },
+  "screen.li_median_all_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 7.06
+  },
+  "screen.li_q90_all_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "unit": "mg/L",
+    "value": 76.0
+  },
+  "screen.mgli_median_all_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 37.0140476968311
+  },
+  "screen.min_wells_basin": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 20
+  },
+  "screen.min_wells_formation": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 10
+  },
+  "screen.n_above_floor": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 261
+  },
+  "screen.n_above_floor_high_mgli": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 160
+  },
+  "screen.n_basins_any_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 11
+  },
+  "screen.n_basins_frac_interval_excludes_zero": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 3
+  },
+  "screen.n_basins_multi_dataset": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 14
+  },
+  "screen.n_basins_ranked": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 22
+  },
+  "screen.n_basins_ranked_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 3952
+  },
+  "screen.n_basins_with_li": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 49
+  },
+  "screen.n_boot": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 1000
+  },
+  "screen.n_formations_ranked": {
+    "recorded_at": "2026-10-12T18:35:46+00:00",
+    "source": "30_screen.py",
+    "value": 76
+  },
+  "screen.n_li_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 4141
+  },
+  "screen.n_pass_primary": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 100
+  },
+  "screen.n_ranked_pairs": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 231
+  },
+  "screen.n_separable_pairs": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 143
+  },
+  "screen.pass1.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.5555555555555556
+  },
+  "screen.pass1.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.18518518518518517
+  },
+  "screen.pass1.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.37037037037037035
+  },
+  "screen.pass1.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 10
+  },
+  "screen.pass1.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 27
+  },
+  "screen.pass1.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Amarillo Arch"
+  },
+  "screen.pass2.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.16666666666666666
+  },
+  "screen.pass2.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.03225806451612903
+  },
+  "screen.pass2.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.09019607843137255
+  },
+  "screen.pass2.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 23
+  },
+  "screen.pass2.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 255
+  },
+  "screen.pass2.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Arkla"
+  },
+  "screen.pass3.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.09731987624086294
+  },
+  "screen.pass3.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.014279448621553885
+  },
+  "screen.pass3.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.047872340425531915
+  },
+  "screen.pass3.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 27
+  },
+  "screen.pass3.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 564
+  },
+  "screen.pass3.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Appalachian"
+  },
+  "screen.pass4.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.06880733944954129
+  },
+  "screen.pass4.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.pass4.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.036065573770491806
+  },
+  "screen.pass4.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 11
+  },
+  "screen.pass4.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 305
+  },
+  "screen.pass4.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Williston"
+  },
+  "screen.pass5.frac_hi": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.05239744039270688
+  },
+  "screen.pass5.frac_lo": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.0
+  },
+  "screen.pass5.frac_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.025848142164781908
+  },
+  "screen.pass5.n_pass": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 16
+  },
+  "screen.pass5.n_wells": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 619
+  },
+  "screen.pass5.name": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Gulf Coast"
+  },
+  "screen.seed": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 20261012
+  },
+  "screen.share_above_floor": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.06302825404491669
+  },
+  "screen.share_pass_primary": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": 0.02414875633904854
+  },
+  "screen.top5_primary": {
+    "recorded_at": "2026-10-12T18:35:44+00:00",
+    "source": "30_screen.py",
+    "value": "Amarillo Arch, Arkla, Appalachian, Michigan, Southern Oklahoma"
+  },
+  "tests.n_failed": {
+    "recorded_at": "2026-10-12T18:43:40+00:00",
+    "source": "60_docs.py",
+    "value": 0
+  },
+  "tests.n_files": {
+    "recorded_at": "2026-10-12T18:43:36+00:00",
+    "source": "60_docs.py",
+    "value": 4
+  },
+  "tests.n_passed": {
+    "recorded_at": "2026-10-12T18:43:40+00:00",
+    "source": "60_docs.py",
+    "value": 13
+  },
+  "tests.n_tests": {
+    "note": "count of `def test_` functions in tests/",
+    "recorded_at": "2026-10-12T18:43:36+00:00",
+    "source": "60_docs.py",
+    "value": 13
+  }
+}

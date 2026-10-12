@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": "q1_nondetects",
+      "text": "How are values below detection represented in the v3.0 lithium column (blank, zero, negative, flagged), and how many lithium values are integer-valued or below 1 mg/L?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    },
+    {
+      "id": "q2_ranking",
+      "text": "Which basins with at least 20 lithium wells have the highest median well lithium and the highest fraction of wells passing Li >= 100 mg/L and Mg/Li <= 10, with cluster bootstrap intervals, and how many basins qualify?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    },
+    {
+      "id": "q3_compilation_bias",
+      "text": "Does the five-basin top set and the order of separable basins survive removing the four lithium-focused datasets named in the version history, and the charge-balance tolerances 5, 15 and none?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    },
+    {
+      "id": "q4_missingness",
+      "text": "How do rows with lithium measured differ from rows without on TDS, depth, decade, play type, basin and dataset, and what is the cross-validated AUC of predicting whether lithium was measured?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    },
+    {
+      "id": "q5_prediction",
+      "text": "What is the out-of-sample RMSE and R-squared of log10 lithium under random-well, leave-one-dataset-out and leave-one-basin-out evaluation for the ridge and boosted models, with spread across folds, and which pre-registered conclusion applies?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    },
+    {
+      "id": "q6_screening_classifier",
+      "text": "At the 100 mg/L floor, what are the AUC, precision, recall and Brier score of the boosted model under each protocol?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    },
+    {
+      "id": "q7_positive_control",
+      "text": "Does the same pipeline predict log10 TDS with random-fold R-squared of at least 0.80, and how does its leave-one-basin-out R-squared compare?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    },
+    {
+      "id": "q8_data_quality_counts",
+      "text": "How many retained rows and lithium wells depend on an estimated specific gravity, how many rows does the charge-balance filter remove, how many are balanced by construction, and how many rows collapse in deduplication?",
+      "status": "open",
+      "answer_keys": [],
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+PRODUCED-WATER LITHIUM
+Where is lithium in U.S. oil and gas produced water, and how much of that picture is an artifact of what was sampled, measured and compiled?
+Project brief for an autonomous implementation agent
+
+Build Produced-Water Lithium in this project directory (/Users/ethannol/src/side-projects/produced-water-lithium). This brief is self-contained. Make routine implementation decisions and carry the project through data acquisition, analysis, testing, and a finished report. Keep it small enough to explain in a five-minute interview.
+
+PURPOSE
+
+Ethan Levy is pursuing a data science role at a company that builds and operates mines and refineries with AI software, including a facility that will extract lithium from oil and gas produced water. His background includes geology/physics/mathematics, a master's in hydrology and water quality, environmental data work, production fraud-detection ML, and work since January 2025 as the founding engineer at a three-person AI startup. His portfolio has a reference groundwater analysis with an LLM evaluation, a verification harness for analysis agents (cairn), two statistics cheat sheets, a mineral prospectivity model that measured its own spatial leakage, and a flow-adjusted interrupted time series on a mine-water event. This project is the feedstock question for produced-water lithium, done with the same honesty.
+
+Central question, two parts:
+
+1. Descriptive: which U.S. basins and formations have produced-water lithium concentrations and major-ion chemistry that would support extraction, with uncertainty, and how much does that ranking change when the known biases of the compilation are accounted for?
+2. Predictive: where lithium was not measured, how well can it be predicted from major-ion chemistry, depth and formation, when the evaluation holds out whole source datasets and whole basins rather than random rows?
+
+Do not decide the answers in advance. "The ranking is robust" and "the ranking is mostly an artifact of which datasets were compiled" are both valid findings. "Lithium cannot be usefully predicted out of basin" is a valid finding. The portfolio's value is the quality of the investigation.
+
+DATA
+
+U.S. Geological Survey National Produced Waters Geochemical Database, version 3.0 (December 2023). Citation: Blondes, M.S., Knierim, K.J., Croke, M.R., Freeman, P.A., Doolan, C., Herzberg, A.S., and Shelton, J.L., 2019, U.S. Geological Survey National Produced Waters Geochemical Database (ver. 3.0, December 2023): U.S. Geological Survey data release, https://doi.org/10.5066/P9DSRCZJ. Public domain. ScienceBase item https://www.sciencebase.gov/catalog/item/64fa1e71d34ed30c2054ea11 (JSON at the same URL with ?format=json lists the file URLs). Files confirmed on 2026-10-12:
+
+- USGS_NPWGDv3_excel.xlsx (80,625,044 bytes): https://www.sciencebase.gov/catalog/file/get/64fa1e71d34ed30c2054ea11?f=__disk__e7%2Fef%2F17%2Fe7ef17fcb71c49e2241da4139ed775f8e328bdab
+- USGS_NPWGDv3_data_dictionary.xlsx (29,653 bytes): https://www.sciencebase.gov/catalog/file/get/64fa1e71d34ed30c2054ea11?f=__disk__00%2F9c%2Fc6%2F009cc66e8a1f7c565c58857f4669d7eba31fe018
+- USGS_NPWGDv3_metadata.xml (310,373 bytes): https://www.sciencebase.gov/catalog/file/get/64fa1e71d34ed30c2054ea11?f=__disk__3b%2F1b%2Fbe%2F3b1bbe47842a7e62d1e5328f40333f8a853c1eb6
+- version_history.txt (6,483 bytes): https://www.sciencebase.gov/catalog/file/get/64fa1e71d34ed30c2054ea11?f=__disk__00%2Fb8%2Fe3%2F00b8e3999bf79514c6fded7f0443b33792dd73e2
+
+The data dictionary has 209 fields; those that matter include IDUSGS, IDDB (the input dataset), SOURCE, REFERENCE, LATITUDE, LONGITUDE, COORDAPX, STATE, BASIN, FORMATION, FORMSIMPLE, PLAYTYPE, WELLTYPE, DEPTHUPPER, DEPTHLOWER, DATESAMPLE, DATEANALYS, UNITSORIG, SG, PH, TDS, TDSDESC, CHARGEBAL, and the major and minor ions in mg/L: Li, Na, K, Ca, Mg, Sr, Ba, B, Cl, Br, SO4, HCO3 or alkalinity fields. Read the metadata XML process steps and the version history before touching the data: version 3.0 removed the quality-control cull flags that earlier versions carried, converted ppm to mg/L using specific gravity, standardized formation names into FORMSIMPLE, and, in its own words, "focused on high lithium datasets" when adding new sources. Find out how values below detection are represented (the dictionary lists no detection-limit fields; check whether they are blank, zero, negative, or flagged in the metadata) and treat the answer as a finding.
+
+The xlsx is 80 MB; keep it out of git in a gitignored archive directory. Read it once, write a deterministic CSV extract of the needed columns to the raw data directory with the archive's SHA-256, row count and HTTP headers in a manifest, and commit the extract. The extract must not be modified afterwards; all cleaning happens downstream with an exclusion log.
+
+KNOWN TRAPS, TO BE EXPOSED NOT ASSUMED
+
+- Compilation bias: datasets were added because they were lithium-rich. A basin's apparent lithium level partly reflects which papers were compiled. Show the ranking with and without the datasets the version history names as lithium-focused, and by dataset within basin.
+- Missing is not random: lithium was measured where someone cared about lithium. Rows with Li present differ systematically from rows without. Quantify it (compare TDS, depth, basin mix, dataset, decade between the two groups).
+- Dataset batch effects: the same formation measured by two sources can differ by method, era, and unit conversion. IDDB is the batch variable; use it in the evaluation.
+- Duplicates and time series: some datasets are repeated samples from the same well. The well, or the well-dataset pair, is the unit, not the row. Make the deduplication explicit and checked.
+- Unit and density: ppm-to-mg/L conversion used specific gravity that was itself sometimes estimated. Report how many rows depended on an estimated SG.
+- Charge balance: CHARGEBAL exists; samples far out of balance are suspect. Pre-register a tolerance and report how many rows it removes, and the sensitivity of the ranking to it.
+- Approximate coordinates: COORDAPX flags approximate locations. Do not draw spatial conclusions finer than the coordinate quality supports.
+- Geothermal and groundwater rows: PLAYTYPE and WELLTYPE include non-produced-water samples. Decide what counts and say so.
+
+VIABILITY DEFINITION
+
+Pre-register a screening definition before looking at the Li distribution by basin, and cite the sources for the thresholds. Extraction screening commonly uses a lithium concentration floor and a magnesium-to-lithium ratio ceiling because magnesium competes in direct lithium extraction, with total dissolved solids as a further constraint. Pick a primary threshold set with a citation (published screening studies of produced-water lithium and DLE process papers; find and cite at least two), and a sensitivity grid around it. Report, per basin and per FORMSIMPLE: number of wells with Li measured, median and interquartile Li, fraction of wells above the floor, Mg/Li distribution, and a bootstrap interval that resamples wells, not rows, clustered by dataset where a basin has more than one. Rank basins with the uncertainty shown; do not publish a point ranking.
+
+PREDICTIVE MODEL
+
+Target: log lithium, on wells where it was measured and detected. Features: major-ion chemistry transformed appropriately (log concentrations or log-ratios over the major-ion subcomposition; say which and why), TDS, depth, and optionally formation age or play type. Two models: a regularized linear model and a gradient boosted tree model (scikit-learn), small fixed grid inside the training folds. No deep learning.
+
+Evaluate under three protocols: random k-fold by well; leave-one-dataset-out (IDDB); leave-one-basin-out. Report RMSE on log Li, R-squared, and, for the screening use, classification quality against the pre-registered floor (AUC, precision at the floor, calibration). The headline figure is the out-of-sample error under the three protocols side by side with spread. If the model works within a basin and fails across basins, say so plainly; that is the useful finding for someone deciding whether to sample a new field.
+
+Include a positive-control check: predict TDS from the same features to show the pipeline can learn something that is genuinely predictable.
+
+BUILD THE PROJECT ON CAIRN
+
+Ethan's harness cairn lives at /Users/ethannol/src/side-projects/cairn (git repository; MIT). Use it as the two sibling projects did (see /Users/ethannol/src/side-projects/mineral-prospectivity and /Users/ethannol/src/side-projects/animas-gold-king for working examples of a cairn project layout, pyproject pinning, decisions logs and rendered README templates; read their docs/decisions.md for the cairn blockers they hit and the workarounds, and reuse those workarounds). Add cairn as an editable path dependency on ../cairn and record its commit hash in the README. Run `cairn init .`, fill `docs/prereg.md` (question, unit of analysis, inclusion rules, charge-balance tolerance, deduplication rule, viability thresholds with citations, feature set, cross-validation protocols, metrics, decision rules), and run `cairn freeze` BEFORE computing any basin ranking or fitting any model. One `scripts/NN_name.py` per step. Record every reported number with `cairn.record`; write `report.tmpl.md` with `{{key}}` placeholders; `cairn verify` must pass at the end including the clean rerun. Keep the archive outside data/raw so the freeze hash covers only the committed extract. Do not edit cairn; record any blocker in docs/decisions.md. Anything decided after the freeze is exploratory and must be labelled so.
+
+TESTS
+
+Focused pytest tests: the extract script produces the committed row count and column set from a small synthetic xlsx fixture; non-detect and missing handling matches a fixture; deduplication collapses a planted repeated well without touching distinct wells; the charge-balance filter removes exactly the intended rows; the Mg/Li and screening rule on a hand-computed example; the leave-one-group-out splitter never leaks a group; the clustered bootstrap returns wider intervals than a naive row bootstrap on a fixture with within-dataset correlation; the positive-control TDS model beats a mean predictor on synthetic data.
+
+DELIVERABLES
+
+- README: question, setup, commands, data provenance, main findings with headline numbers and the headline figures, what is not claimed, how AI was used (one honest paragraph: built in a Claude Code session with Claude Fable 5.1 from this brief; the author reviewed the pre-registration, the tests and the findings). Render README, walkthrough and resume bullet from templates so their numbers come from the ledger, as the sibling projects do.
+- src/ package (uv, hatchling, Python 3.12, uv.lock): acquire, extract, prepare, screen, models, cv, figures, report; scripts/ pipeline under cairn.
+- reports/: report.md rendered from the ledger; figures (where Li was measured versus not, by basin and decade; Li distribution by basin with well counts and intervals, with and without the lithium-focused datasets; Mg/Li against Li with the screening box; the missingness comparison; the three-protocol prediction error headline; calibration of the screening classifier; a map at the resolution the coordinates support); tables.
+- docs/: decisions.md (every decision with reasons, the detection-limit finding, the threshold citations, cairn blockers), prereg.md (frozen), data_dictionary.md, walkthrough.md (five-minute script), resume_bullet.md (measured results only).
+
+Everything deterministic must run from a fresh checkout without network access given the committed extract. Seed everything. Keep compute to minutes.
+
+WORKING RULES
+
+Work only in this project directory, reading the sibling projects and cairn as references only. Do not read or modify any employer systems or data. Do not create a GitHub repository, deploy anything, or contact anyone. Initialise a git repository here with local config user.name "Ethan Levy" and user.email "ethannol@gmail.com", branch main, a .gitignore excluding .venv, caches and the archive directory, and commit in a few sensible steps. End every commit message with the line: Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>. Do not put any other name on anything. Do not name the company or speculate about where it sources its feedstock; the project is about the public database.
+
+Machine restrictions on this MacBook: do not launch Chrome, Chromium, Playwright, browser rendering, screenshots, or dev servers. Matplotlib figures are fine. Do not detach background jobs; run cairn verify in the foreground. No LLM calls are needed. Use `python -I` for the first inspection of the downloaded archive. WebSearch and WebFetch are allowed for finding and citing the threshold sources.
+
+COMPLETION STANDARD
+
+A bounded, honest study: a pre-registered screening definition and evaluation protocol frozen before any ranking or fit, a reproducible extract, a basin ranking with clustered uncertainty shown with and without the compilation's lithium-focused sources, a quantified missingness comparison, a three-protocol prediction comparison with spread, and limitations attached to the claims they affect.
+
+Proceed autonomously on routine choices. Finish with: the runnable commands, artifact locations, how non-detects turned out to be represented, the primary thresholds and their citations, the top basins with well counts and intervals under the primary and the bias-adjusted view, the headline prediction errors under the three protocols with spread, test count and status, cairn verify status, cairn blockers and workarounds, and anything unfinished stated narrowly. Every number in the reply must come from the ledger.

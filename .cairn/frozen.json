@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-10-12T18:00:14+00:00",
+  "git_head": null,
+  "files": {
+    "docs/prereg.md": "e07545c2bf3d8f48443ccd17e834bf7a978a2df042679e484314218740a8863b",
+    "data/raw/USGS_NPWGDv3_metadata.xml": "feedd7dfce1525c84e36bd66b9d73d68dd2aabdb1268ca1f4fb5e01866cd5f5a",
+    "data/raw/data_dictionary.csv": "3e817a79891e04fa0664efcf8a572882b6c1cfa4c851a83b2794c451eac361c3",
+    "data/raw/manifest.json": "d183d3a0d39876975bed59406310177099274bb760573e9d884786238d45a3de",
+    "data/raw/npwgd_v3_extract.csv": "338d7735d3a75f5b8569c57d8559a4315a5b71ff87c1f9392659951ea45ef417",
+    "data/raw/version_history.txt": "8f9eb5b9f41b30bca978aeec0cdaceb04e0006f20290a143bdcebfb94aa86503"
+  }
+}

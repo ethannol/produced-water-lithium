@@ -3,11 +3,11 @@
   "title": "Produced-Water Lithium",
   "kind": "study",
   "status": "complete",
-  "question": "Which U.S. basins have oil and gas produced water with lithium worth extracting, how much of that picture is an artifact of what was sampled and compiled, and can lithium be predicted where it was never measured?",
+  "question": "Which U.S. basins have analyzed produced-water wells meeting a lithium screening rule, how much of that picture reflects sampling and compilation, and how well do predictions transfer to held-out basins?",
   "one_liner": "The USGS National Produced Waters Geochemical Database v3.0, a pre-registered screening rule with cited thresholds, dataset-clustered bootstrap intervals, a missingness audit, and lithium prediction evaluated by random folds, leave-one-dataset-out and leave-one-basin-out.",
   "aim": "Rank U.S. basins by the fraction of produced-water wells meeting a cited lithium-extraction screen, test whether the ranking is an artifact of how the USGS produced-waters database was compiled, characterise which rows have lithium measured, and test whether lithium can be predicted where it was not measured.",
   "hypothesis": "Pre-registered rules: the ranking is robust to compilation bias if removing the four lithium-focused source datasets leaves at least four of the top five basins and reverses no separable pair; lithium measurement is not missing at random if a classifier separates measured from unmeasured rows with AUC at least 0.70; prediction is useful out of basin if leave-one-basin-out R-squared is at least 0.30 and AUC at the screening floor at least 0.75.",
-  "conclusion": "The database carries no detection-limit information; a below-detection result is an empty cell. One hundred of 4,141 lithium wells pass the screen, concentrated in three basins, one of which is a single dataset with centroid coordinates. The ranking is robust to removing the named lithium-focused datasets, but within-basin medians from different source datasets differ by a median factor of four. Lithium measurement is not missing at random. Out-of-basin prediction error is about 40 percent higher than under random folds; it passes the pre-registered usefulness rule, which the report judges too loose because only 6 of 22 held-out basins meet the R-squared bar.",
+  "conclusion": "The database carries no detection-limit information; below-detection and not-analyzed cells are indistinguishable. {{screen.n_pass_primary}} of {{screen.n_li_wells}} lithium wells pass the screen. {{screen.n_basins_frac_interval_excludes_zero}} ranked basins have screened-fraction intervals excluding zero; the highest median is supported by one dataset with centroid coordinates. Removing named lithium-focused datasets leaves the ranking robust under the frozen rule, but within-basin dataset medians differ by a median factor of {{screen.ds.median_ratio:.1f}}. Lithium measurement is associated with observed row characteristics. Out-of-basin prediction error is {{model.rmse_ratio_lobo_random_hgb:.2f}} times the random-fold error; it passes the pooled pre-registered rule but screening precision is {{model.lobo.hgb.cls_precision:.2f}} and only {{model.lobo.hgb.n_basins_r2_ge_0_3}} of {{model.n_basins_heldout}} basins meet the R-squared bar.",
   "ledger": {
     "type": "cairn",
     "path": "artifacts/numbers.json"
@@ -16,10 +16,10 @@
     {
       "label": "Wells with lithium measured",
       "value": "screen.n_li_wells",
-      "note": "of about 55,000 wells; lithium is on {{miss.share_measured:.1%}} of rows"
+      "note": "lithium is on {{miss.share_measured:.1%}} of rows"
     },
     {
-      "label": "Wells passing the screen (Li ≥ 100 mg/L and Mg/Li ≤ 10)",
+      "label": "Wells passing the screen (Li \u2265 100 mg/L and Mg/Li \u2264 10)",
       "value": "screen.n_pass_primary",
       "note": "{{screen.share_pass_primary:.1%}} of lithium wells"
     },
@@ -44,12 +44,24 @@
       "value": "miss.auc",
       "fmt": ".2f",
       "note": "{{miss.verdict}}"
+    },
+    {
+      "label": "Out-of-basin screening precision",
+      "value": "model.lobo.hgb.cls_precision",
+      "fmt": ".2f",
+      "note": "Only {{model.lobo.hgb.n_basins_r2_ge_0_3}} of {{model.n_basins_heldout}} held-out basins meet the R-squared bar; pooled rule success does not establish reliable basin-level screening."
+    },
+    {
+      "label": "Joint-screen status unknown because Mg is missing",
+      "value": "screen_coverage.n_unknown",
+      "note": "{{screen.n_pass_primary}} pass and {{screen_coverage.n_fail}} fail; unknown-as-fail/pass bounds are {{screen_coverage.fraction_lower:.3%}} to {{screen_coverage.fraction_upper:.3%}} of Li wells."
     }
   ],
   "finding": [
     "Non-detects are not represented at all in version 3.0. Lithium has {{nondetect.Li.nonempty}} non-empty cells with {{nondetect.Li.negative}} negative, {{nondetect.Li.zero}} zero and {{nondetect.Li.lt_prefixed}} less-than values, and the dictionary has {{nondetect.dictionary_detection_fields}} detection fields of {{nondetect.dictionary_fields}}. A below-detection result is an empty cell, indistinguishable from not analysed. That is the first finding, and it means every lithium value here is a detection.",
     "With a floor of {{screen.floor_mg_l:.0f}} mg/L and a magnesium-to-lithium ceiling of {{screen.ceiling_mg_li:.0f}}, both cited, {{screen.n_above_floor}} of {{screen.n_li_wells}} lithium wells clear the floor and {{screen.n_pass_primary}} pass the joint screen. Of {{screen.n_basins_ranked}} basins with at least {{screen.min_wells_basin}} wells, {{screen.n_basins_frac_interval_excludes_zero}} have screened-fraction intervals that exclude zero: {{screen.pass1.name}} ({{screen.pass1.frac_pass:.0%}} of {{screen.pass1.n_wells}} wells, one dataset, all centroid coordinates), {{screen.pass2.name}} ({{screen.pass2.frac_pass:.0%}} of {{screen.pass2.n_wells}}) and {{screen.pass3.name}} ({{screen.pass3.frac_pass:.1%}} of {{screen.pass3.n_wells}}). Removing the four datasets the compilers named as lithium-focused removes only {{screen.adj.n_li_wells_removed}} lithium wells and leaves the top five unchanged, so the ranking is robust to that bias. The subtler batch effect is larger: within basins with more than one source dataset, dataset medians differ by a median factor of {{screen.ds.median_ratio:.1f}} and up to {{screen.ds.max_ratio:.0f}}.",
-    "Lithium was measured on {{miss.share_measured:.1%}} of rows and a classifier tells measured from unmeasured rows with an AUC of {{miss.auc:.2f}}; {{miss.datasets_none_measured}} of {{miss.datasets_total}} source datasets never measured it, and {{miss.decade_top_measured_share:.0%}} of dated lithium rows are from the 1960s. Prediction from major ions, depth and play type reaches an RMSE of {{model.random.hgb.rmse_pooled:.2f}} log units under random folds, {{model.lodo.hgb.rmse_pooled:.2f}} when whole source datasets are held out and {{model.lobo.hgb.rmse_pooled:.2f}} when whole basins are, with held-out R-squared falling from {{model.random.hgb.r2_pooled:.2f}} to {{model.lobo.hgb.r2_pooled:.2f}}. Precision at the screening floor falls from {{model.random.hgb.cls_precision:.2f}} to {{model.lobo.hgb.cls_precision:.2f}} out of basin. The positive control, predicting total dissolved solids from the same features, holds up out of basin (R-squared {{control.lobo.hgb.r2_pooled:.2f}}), so the pipeline can learn what is learnable."
+    "Lithium was measured on {{miss.share_measured:.1%}} of rows and a classifier tells measured from unmeasured rows with an AUC of {{miss.auc:.2f}}; {{miss.datasets_none_measured}} of {{miss.datasets_total}} source datasets never measured it, and {{miss.decade_top_measured_share:.0%}} of dated lithium rows are from the 1960s. Prediction from major ions, depth and play type reaches an RMSE of {{model.random.hgb.rmse_pooled:.2f}} log units under random folds, {{model.lodo.hgb.rmse_pooled:.2f}} when whole source datasets are held out and {{model.lobo.hgb.rmse_pooled:.2f}} when whole basins are, with held-out R-squared falling from {{model.random.hgb.r2_pooled:.2f}} to {{model.lobo.hgb.r2_pooled:.2f}}. Precision at the screening floor falls from {{model.random.hgb.cls_precision:.2f}} to {{model.lobo.hgb.cls_precision:.2f}} out of basin. The positive control, predicting total dissolved solids from the same features, holds up out of basin (R-squared {{control.lobo.hgb.r2_pooled:.2f}}), so the pipeline can learn what is learnable.",
+    "The supplementary held-basin calibration audit finds a supported gap in {{domain_calibration.worst_lobo.domain}}: mean probability {{domain_calibration.worst_lobo.predicted:.1%}}, observed Li-floor exceedance {{domain_calibration.worst_lobo.observed:.1%}} on {{domain_calibration.worst_lobo.n}} wells. The observed-frequency Wilson interval is {{domain_calibration.worst_lobo.lo:.1%}} to {{domain_calibration.worst_lobo.hi:.1%}}. This selected diagnostic concerns the lithium floor alone, not the joint screen; it is not a formal calibration test."
   ],
   "traps": [
     {
@@ -120,16 +132,25 @@
     {
       "title": "Decisions log, including threshold sources and the non-detect finding",
       "path": "docs/decisions.md"
+    },
+    {
+      "title": "Exploratory screening coverage and domain calibration",
+      "path": "docs/screening-calibration.md"
+    },
+    {
+      "title": "Recorded screening and domain calibration results",
+      "path": "docs/screening-results.md"
     }
   ],
   "verification": {
     "frozen": ".cairn/frozen.json",
     "tests": "tests.n_passed",
     "harness": "cairn",
-    "verify": "pass"
+    "verify": "pass",
+    "artifact": "reports/check-evidence.json"
   },
   "data": [
-    "USGS National Produced Waters Geochemical Database v3.0 (December 2023), 113,135-row extract of 68 fields committed with manifest and SHA-256"
+    "USGS National Produced Waters Geochemical Database v3.0 (December 2023), {{profile.rows:,}}-row extract of {{profile.columns}} fields committed with manifest and SHA-256"
   ],
   "stack": [
     "screening thresholds with citations",
@@ -142,5 +163,69 @@
   ],
   "links": {
     "Repository": "https://github.com/ethannol/produced-water-lithium"
+  },
+  "numeric_constants": {
+    "3.0": "Source database version identifier, not an observed result.",
+    "100": "Literature-based lithium screening floor (mg/L), fixed before analysis.",
+    "10": "Literature-based Mg/Li screening ceiling, fixed before analysis.",
+    "0.70": "Predeclared missingness-classifier AUC threshold.",
+    "0.30": "Predeclared predictive usefulness R-squared threshold.",
+    "0.75": "Predeclared predictive usefulness classification AUC threshold.",
+    "0": "Trailing component of database version v3.0, not an observed numeric result.",
+    "2023": "Publication year of the source database version.",
+    "256": "SHA-256 cryptographic digest width, not a measured result."
+  },
+  "strict_numbers": true,
+  "sources": {
+    "screen_coverage.n_unknown": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "n_unknown"
+    },
+    "screen_coverage.n_fail": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "n_fail"
+    },
+    "screen_coverage.fraction_lower": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "fraction_lower"
+    },
+    "screen_coverage.fraction_upper": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "fraction_upper"
+    },
+    "domain_calibration.worst_lobo.domain": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "worst_lobo.domain"
+    },
+    "domain_calibration.worst_lobo.n": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "worst_lobo.n"
+    },
+    "domain_calibration.worst_lobo.predicted": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "worst_lobo.predicted"
+    },
+    "domain_calibration.worst_lobo.observed": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "worst_lobo.observed"
+    },
+    "domain_calibration.worst_lobo.lo": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "worst_lobo.lo"
+    },
+    "domain_calibration.worst_lobo.hi": {
+      "source": "json_file",
+      "path": "reports/exploratory/screening_calibration/summary.json",
+      "key": "worst_lobo.hi"
+    }
   }
 }

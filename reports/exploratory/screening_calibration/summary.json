@@ -1,0 +1,28 @@
+{
+  "exploratory": true,
+  "n_pass": 100,
+  "n_unknown": 1,
+  "n_fail": 4040,
+  "n_li_wells": 4141,
+  "source_revision": "17b278482619837debceb3a1429bc069dc184885",
+  "caveat": "Wilson intervals describe held-domain bin support, not model or transport uncertainty; no recalibration fitted",
+  "baseline_unchanged": true,
+  "fraction_lower": 0.02414875633904854,
+  "fraction_upper": 0.024390243902439025,
+  "worst_lobo": {
+    "domain": "Amarillo Arch",
+    "n": 27,
+    "predicted": 0.0306827124340163,
+    "observed": 0.5925925925925926,
+    "lo": 0.4072670096806468,
+    "hi": 0.7548524292560443
+  },
+  "worst_lodo": {
+    "domain": "MISSISSIPPI",
+    "n": 20,
+    "predicted": 0.4972545118858877,
+    "observed": 0.0,
+    "lo": 0.0,
+    "hi": 0.1611251580528193
+  }
+}

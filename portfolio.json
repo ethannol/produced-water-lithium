@@ -3,11 +3,11 @@
   "title": "Produced-Water Lithium",
   "kind": "study",
   "status": "complete",
-  "question": "Which U.S. basins have oil and gas produced water with lithium worth extracting, how much of that picture is an artifact of what was sampled and compiled, and can lithium be predicted where it was never measured?",
+  "question": "Which U.S. basins have analyzed produced-water wells meeting a lithium screening rule, how much of that picture reflects sampling and compilation, and how well do predictions transfer to held-out basins?",
   "one_liner": "The USGS National Produced Waters Geochemical Database v3.0, a pre-registered screening rule with cited thresholds, dataset-clustered bootstrap intervals, a missingness audit, and lithium prediction evaluated by random folds, leave-one-dataset-out and leave-one-basin-out.",
   "aim": "Rank U.S. basins by the fraction of produced-water wells meeting a cited lithium-extraction screen, test whether the ranking is an artifact of how the USGS produced-waters database was compiled, characterise which rows have lithium measured, and test whether lithium can be predicted where it was not measured.",
   "hypothesis": "Pre-registered rules: the ranking is robust to compilation bias if removing the four lithium-focused source datasets leaves at least four of the top five basins and reverses no separable pair; lithium measurement is not missing at random if a classifier separates measured from unmeasured rows with AUC at least 0.70; prediction is useful out of basin if leave-one-basin-out R-squared is at least 0.30 and AUC at the screening floor at least 0.75.",
-  "conclusion": "The database carries no detection-limit information; a below-detection result is an empty cell. One hundred of 4,141 lithium wells pass the screen, concentrated in three basins, one of which is a single dataset with centroid coordinates. The ranking is robust to removing the named lithium-focused datasets, but within-basin medians from different source datasets differ by a median factor of four. Lithium measurement is not missing at random. Out-of-basin prediction error is about 40 percent higher than under random folds; it passes the pre-registered usefulness rule, which the report judges too loose because only 6 of 22 held-out basins meet the R-squared bar.",
+  "conclusion": "The database carries no detection-limit information; below-detection and not-analyzed cells are indistinguishable. {{screen.n_pass_primary}} of {{screen.n_li_wells}} lithium wells pass the screen. {{screen.n_basins_frac_interval_excludes_zero}} ranked basins have screened-fraction intervals excluding zero; the highest median is supported by one dataset with centroid coordinates. Removing named lithium-focused datasets leaves the ranking robust under the frozen rule, but within-basin dataset medians differ by a median factor of {{screen.ds.median_ratio:.1f}}. Lithium measurement is associated with observed row characteristics. Out-of-basin prediction error is {{model.rmse_ratio_lobo_random_hgb:.2f}} times the random-fold error; it passes the pooled pre-registered rule but screening precision is {{model.lobo.hgb.cls_precision:.2f}} and only {{model.lobo.hgb.n_basins_r2_ge_0_3}} of {{model.n_basins_heldout}} basins meet the R-squared bar.",
   "ledger": {
     "type": "cairn",
     "path": "artifacts/numbers.json"
@@ -16,10 +16,10 @@
     {
       "label": "Wells with lithium measured",
       "value": "screen.n_li_wells",
-      "note": "of about 55,000 wells; lithium is on {{miss.share_measured:.1%}} of rows"
+      "note": "lithium is on {{miss.share_measured:.1%}} of rows"
     },
     {
-      "label": "Wells passing the screen (Li ≥ 100 mg/L and Mg/Li ≤ 10)",
+      "label": "Wells passing the screen (Li \u2265 100 mg/L and Mg/Li \u2264 10)",
       "value": "screen.n_pass_primary",
       "note": "{{screen.share_pass_primary:.1%}} of lithium wells"
     },
@@ -44,6 +44,12 @@
       "value": "miss.auc",
       "fmt": ".2f",
       "note": "{{miss.verdict}}"
+    },
+    {
+      "label": "Out-of-basin screening precision",
+      "value": "model.lobo.hgb.cls_precision",
+      "fmt": ".2f",
+      "note": "Only {{model.lobo.hgb.n_basins_r2_ge_0_3}} of {{model.n_basins_heldout}} held-out basins meet the R-squared bar; pooled rule success does not establish reliable basin-level screening."
     }
   ],
   "finding": [
@@ -120,6 +126,10 @@
     {
       "title": "Decisions log, including threshold sources and the non-detect finding",
       "path": "docs/decisions.md"
+    },
+    {
+      "title": "Exploratory screening coverage and domain calibration",
+      "path": "docs/screening-calibration.md"
     }
   ],
   "verification": {

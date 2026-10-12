@@ -316,3 +316,10 @@ re-executes every step from a clean ledger and compares every value. cairn commi
 ## Decision log
 
 See `docs/decisions.md`.
+
+
+## Practical applicability and supplementary coverage
+
+Passing the frozen pooled usefulness rule does not establish reliable screening in each new basin. Held-out screening precision is 0.28, and only 6 of 22 basins meet the R-squared bar. These limits govern application of predictions to unmeasured wells.
+
+The [supplementary screening and calibration audit](docs/screening-calibration.md) separates missing-Mg unknowns from failures and reports reliability by held-out basin and dataset with bin support. Its outputs are exploratory and do not change the frozen screen denominator or model verdict.

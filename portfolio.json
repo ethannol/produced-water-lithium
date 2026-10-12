@@ -1,0 +1,51 @@
+{
+  "slug": "produced-water-lithium",
+  "title": "Produced-Water Lithium",
+  "kind": "study",
+  "status": "complete",
+  "question": "Which U.S. basins have oil and gas produced water with lithium worth extracting, how much of that picture is an artifact of what was sampled and compiled, and can lithium be predicted where it was never measured?",
+  "one_liner": "The USGS National Produced Waters Geochemical Database v3.0, a pre-registered screening rule with cited thresholds, dataset-clustered bootstrap intervals, a missingness audit, and lithium prediction evaluated by random folds, leave-one-dataset-out and leave-one-basin-out.",
+  "ledger": {"type": "cairn", "path": "artifacts/numbers.json"},
+  "headline": [
+    {"label": "Wells with lithium measured", "value": "screen.n_li_wells", "note": "of about 55,000 wells; lithium is on {{miss.share_measured:.1%}} of rows"},
+    {"label": "Wells passing the screen (Li ≥ 100 mg/L and Mg/Li ≤ 10)", "value": "screen.n_pass_primary", "note": "{{screen.share_pass_primary:.1%}} of lithium wells"},
+    {"label": "Prediction RMSE, random folds (log10 Li)", "value": "model.random.hgb.rmse_pooled", "fmt": ".2f", "lo": "model.random.hgb.rmse_fold_min", "hi": "model.random.hgb.rmse_fold_max", "spread_kind": "fold range"},
+    {"label": "Prediction RMSE, leave-one-basin-out", "value": "model.lobo.hgb.rmse_pooled", "fmt": ".2f", "lo": "model.lobo.hgb.rmse_fold_min", "hi": "model.lobo.hgb.rmse_fold_max", "spread_kind": "fold range"},
+    {"label": "Missingness classifier AUC (lithium measured or not)", "value": "miss.auc", "fmt": ".2f", "note": "{{miss.verdict}}"}
+  ],
+  "finding": [
+    "Non-detects are not represented at all in version 3.0. Lithium has {{nondetect.Li.nonempty}} non-empty cells with {{nondetect.Li.negative}} negative, {{nondetect.Li.zero}} zero and {{nondetect.Li.lt_prefixed}} less-than values, and the dictionary has {{nondetect.dictionary_detection_fields}} detection fields of {{nondetect.dictionary_fields}}. A below-detection result is an empty cell, indistinguishable from not analysed. That is the first finding, and it means every lithium value here is a detection.",
+    "With a floor of {{screen.floor_mg_l:.0f}} mg/L and a magnesium-to-lithium ceiling of {{screen.ceiling_mg_li:.0f}}, both cited, {{screen.n_above_floor}} of {{screen.n_li_wells}} lithium wells clear the floor and {{screen.n_pass_primary}} pass the joint screen. Of {{screen.n_basins_ranked}} basins with at least {{screen.min_wells_basin}} wells, {{screen.n_basins_frac_interval_excludes_zero}} have screened-fraction intervals that exclude zero: {{screen.pass1.name}} ({{screen.pass1.frac_pass:.0%}} of {{screen.pass1.n_wells}} wells, one dataset, all centroid coordinates), {{screen.pass2.name}} ({{screen.pass2.frac_pass:.0%}} of {{screen.pass2.n_wells}}) and {{screen.pass3.name}} ({{screen.pass3.frac_pass:.1%}} of {{screen.pass3.n_wells}}). Removing the four datasets the compilers named as lithium-focused removes only {{screen.adj.n_li_wells_removed}} lithium wells and leaves the top five unchanged, so the ranking is robust to that bias. The subtler batch effect is larger: within basins with more than one source dataset, dataset medians differ by a median factor of {{screen.ds.median_ratio:.1f}} and up to {{screen.ds.max_ratio:.0f}}.",
+    "Lithium was measured on {{miss.share_measured:.1%}} of rows and a classifier tells measured from unmeasured rows with an AUC of {{miss.auc:.2f}}; {{miss.datasets_none_measured}} of {{miss.datasets_total}} source datasets never measured it, and {{miss.decade_top_measured_share:.0%}} of dated lithium rows are from the 1960s. Prediction from major ions, depth and play type reaches an RMSE of {{model.random.hgb.rmse_pooled:.2f}} log units under random folds, {{model.lodo.hgb.rmse_pooled:.2f}} when whole source datasets are held out and {{model.lobo.hgb.rmse_pooled:.2f}} when whole basins are, with held-out R-squared falling from {{model.random.hgb.r2_pooled:.2f}} to {{model.lobo.hgb.r2_pooled:.2f}}. Precision at the screening floor falls from {{model.random.hgb.cls_precision:.2f}} to {{model.lobo.hgb.cls_precision:.2f}} out of basin. The positive control, predicting total dissolved solids from the same features, holds up out of basin (R-squared {{control.lobo.hgb.r2_pooled:.2f}}), so the pipeline can learn what is learnable."
+  ],
+  "traps": [
+    {"id": "compilation-bias", "how": "Version 3.0 added datasets because they were lithium-rich; the ranking was recomputed without them. Only {{screen.adj.n_li_wells_removed}} wells moved and the top five held, but within-basin dataset medians still differ by a median factor of {{screen.ds.median_ratio:.1f}}."},
+    {"id": "batch-effects", "how": "Holding out whole source datasets raises prediction RMSE from {{model.random.hgb.rmse_pooled:.2f}} to {{model.lodo.hgb.rmse_pooled:.2f}}; the fold range runs from {{model.lodo.hgb.rmse_fold_min:.2f}} to {{model.lodo.hgb.rmse_fold_max:.2f}}."},
+    {"id": "spatial-leakage", "how": "Leave-one-basin-out is the spatial analogue here: precision at the screening floor drops from {{model.random.hgb.cls_precision:.2f}} to {{model.lobo.hgb.cls_precision:.2f}}."},
+    {"id": "censoring", "how": "The database has no detection-limit representation at all; below-detection and not-analysed are the same empty cell. Reported as a finding rather than modelled."},
+    {"id": "composition", "how": "Lithium is measured on {{miss.share_measured:.1%}} of rows and the measured rows are distinguishable from the rest (AUC {{miss.auc:.2f}}); bootstrap intervals resample wells clustered by dataset, not rows."},
+    {"id": "join-fanout", "how": "Repeated samples from one well are collapsed to the well before any count; a planted duplicate is tested."}
+  ],
+  "figures": [
+    {"path": "reports/figures/fig2_basin_ranking.png", "caption": "Basins ranked by the fraction of lithium wells passing the screen, with dataset-clustered bootstrap intervals and well counts."},
+    {"path": "reports/figures/fig5_prediction_error.png", "caption": "Out-of-sample prediction error under random folds, leave-one-dataset-out and leave-one-basin-out, with the fold spread."},
+    {"path": "reports/figures/fig3_mgli_vs_li.png", "caption": "Magnesium-to-lithium ratio against lithium concentration with the screening box."},
+    {"path": "reports/figures/fig4_missingness.png", "caption": "Rows with lithium measured against rows without, by basin, decade, dataset and depth."},
+    {"path": "reports/figures/fig1_coverage_basin_decade.png", "caption": "Where and when lithium was measured."},
+    {"path": "reports/figures/fig7_map.png", "caption": "Lithium wells at the resolution the coordinates support; centroid-only locations are marked."}
+  ],
+  "not_claimed": [
+    "No statement about any company's feedstock or site; the project is about the public database.",
+    "No viability claim for a basin from a single source dataset with centroid coordinates.",
+    "No non-detect handling, because the database carries no detection information."
+  ],
+  "documents": [
+    {"title": "Five-minute walkthrough", "path": "docs/walkthrough.md"},
+    {"title": "Pre-registration (frozen before any ranking or fit)", "path": "docs/prereg.md"},
+    {"title": "Decisions log, including threshold sources and the non-detect finding", "path": "docs/decisions.md"}
+  ],
+  "verification": {"frozen": ".cairn/frozen.json", "tests": "tests.n_passed", "harness": "cairn", "verify": "pass"},
+  "data": ["USGS National Produced Waters Geochemical Database v3.0 (December 2023), 113,135-row extract of 68 fields committed with manifest and SHA-256"],
+  "stack": ["screening thresholds with citations", "dataset-clustered bootstrap", "missingness classifier", "ridge and gradient boosting", "leave-one-group-out CV", "positive control", "cairn ledger"],
+  "links": {"Repository": "https://github.com/ethannol/produced-water-lithium"}
+}

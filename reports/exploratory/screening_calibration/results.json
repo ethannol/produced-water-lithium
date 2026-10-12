@@ -1,0 +1,10 @@
+{
+  "exploratory": true,
+  "n_pass": 100,
+  "n_unknown": 1,
+  "n_fail": 4040,
+  "n_li_wells": 4141,
+  "source_revision": "17b278482619837debceb3a1429bc069dc184885",
+  "caveat": "Wilson intervals describe held-domain bin support, not model or transport uncertainty; no recalibration fitted",
+  "baseline_unchanged": true
+}

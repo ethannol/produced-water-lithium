@@ -152,5 +152,14 @@
   ],
   "links": {
     "Repository": "https://github.com/ethannol/produced-water-lithium"
-  }
+  },
+  "numeric_constants": {
+    "3.0": "Source database version identifier, not an observed result.",
+    "100": "Literature-based lithium screening floor (mg/L), fixed before analysis.",
+    "10": "Literature-based Mg/Li screening ceiling, fixed before analysis.",
+    "0.70": "Predeclared missingness-classifier AUC threshold.",
+    "0.30": "Predeclared predictive usefulness R-squared threshold.",
+    "0.75": "Predeclared predictive usefulness classification AUC threshold."
+  },
+  "strict_numbers": true
 }

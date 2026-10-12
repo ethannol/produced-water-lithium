@@ -146,7 +146,8 @@
     "frozen": ".cairn/frozen.json",
     "tests": "tests.n_passed",
     "harness": "cairn",
-    "verify": "pass"
+    "verify": "pass",
+    "artifact": "reports/check-evidence.json"
   },
   "data": [
     "USGS National Produced Waters Geochemical Database v3.0 (December 2023), {{profile.rows:,}}-row extract of {{profile.columns}} fields committed with manifest and SHA-256"

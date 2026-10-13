@@ -8,6 +8,18 @@
   "aim": "Rank U.S. basins by the fraction of produced-water wells meeting a cited lithium-extraction screen, test whether the ranking is an artifact of how the USGS produced-waters database was compiled, characterise which rows have lithium measured, and test whether lithium can be predicted where it was not measured.",
   "hypothesis": "Pre-registered rules: the ranking is robust to compilation bias if removing the four lithium-focused source datasets leaves at least four of the top five basins and reverses no separable pair; lithium measurement is not missing at random if a classifier separates measured from unmeasured rows with AUC at least 0.70; prediction is useful out of basin if leave-one-basin-out R-squared is at least 0.30 and AUC at the screening floor at least 0.75.",
   "conclusion": "The database carries no detection-limit information; below-detection and not-analyzed cells are indistinguishable. {{screen.n_pass_primary}} of {{screen.n_li_wells}} lithium wells pass the screen. {{screen.n_basins_frac_interval_excludes_zero}} ranked basins have screened-fraction intervals excluding zero; the highest median is supported by one dataset with centroid coordinates. Removing named lithium-focused datasets leaves the ranking robust under the frozen rule, but within-basin dataset medians differ by a median factor of {{screen.ds.median_ratio:.1f}}. Lithium measurement is associated with observed row characteristics. Out-of-basin prediction error is {{model.rmse_ratio_lobo_random_hgb:.2f}} times the random-fold error; it passes the pooled pre-registered rule but screening precision is {{model.lobo.hgb.cls_precision:.2f}} and only {{model.lobo.hgb.n_basins_r2_ge_0_3}} of {{model.n_basins_heldout}} basins meet the R-squared bar.",
+  "summary": {
+    "question": "Which oilfield brines in the United States carry enough lithium to be worth extracting, and how far can the public database be trusted?",
+    "techniques": [
+      "Literature-based screening thresholds",
+      "Cluster bootstrap by source dataset",
+      "Missing-data audit with a classifier",
+      "Ridge and gradient-boosting regression",
+      "Leave-one-basin-out validation",
+      "Positive-control model"
+    ],
+    "result": "The database records no detection limits. A small share of wells pass the screen, concentrated in three basins, and lithium predictions do not transfer reliably to basins the model has not seen."
+  },
   "ledger": {
     "type": "cairn",
     "path": "artifacts/numbers.json"
@@ -19,7 +31,7 @@
       "note": "lithium is on {{miss.share_measured:.1%}} of rows"
     },
     {
-      "label": "Wells passing the screen (Li \u2265 100 mg/L and Mg/Li \u2264 10)",
+      "label": "Wells passing the screen (Li ≥ 100 mg/L and Mg/Li ≤ 10)",
       "value": "screen.n_pass_primary",
       "note": "{{screen.share_pass_primary:.1%}} of lithium wells"
     },

@@ -3,6 +3,7 @@
   "title": "Produced-Water Lithium",
   "kind": "study",
   "status": "complete",
+  "story": "docs/story.md",
   "question": "Which U.S. basins have analyzed produced-water wells meeting a lithium screening rule, how much of that picture reflects sampling and compilation, and how well do predictions transfer to held-out basins?",
   "one_liner": "The USGS National Produced Waters Geochemical Database v3.0, a pre-registered screening rule with cited thresholds, dataset-clustered bootstrap intervals, a missingness audit, and lithium prediction evaluated by random folds, leave-one-dataset-out and leave-one-basin-out.",
   "aim": "Rank U.S. basins by the fraction of produced-water wells meeting a cited lithium-extraction screen, test whether the ranking is an artifact of how the USGS produced-waters database was compiled, characterise which rows have lithium measured, and test whether lithium can be predicted where it was not measured.",

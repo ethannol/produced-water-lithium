@@ -18,7 +18,33 @@
       "Leave-one-basin-out validation",
       "Positive-control model"
     ],
-    "result": "The database records no detection limits. A small share of wells pass the screen, concentrated in three basins, and lithium predictions do not transfer reliably to basins the model has not seen."
+    "result": "The database records no detection limits. A small share of wells pass the screen, concentrated in three basins, and lithium predictions do not transfer reliably to basins the model has not seen.",
+    "pitfalls": [
+      {
+        "id": "censoring",
+        "text": "The database has {{nondetect.dictionary_detection_fields}} detection-limit fields; a below-detection result and a never-analysed one are the same empty cell"
+      },
+      {
+        "id": "compilation-bias",
+        "text": "Removing the lithium-focused source datasets moved {{screen.adj.n_li_wells_removed}} wells, but source datasets within one basin disagree by a median factor of {{screen.ds.median_ratio:.1f}}"
+      },
+      {
+        "id": "composition",
+        "text": "Lithium was measured on {{miss.share_measured:.1%}} of rows, and a classifier tells those rows from the rest with an AUC of {{miss.auc:.2f}}"
+      },
+      {
+        "id": "batch-effects",
+        "text": "Prediction error rose from {{model.random.hgb.rmse_pooled:.2f}} to {{model.lodo.hgb.rmse_pooled:.2f}} log units when whole source datasets were held out"
+      },
+      {
+        "id": "spatial-leakage",
+        "text": "Screening precision fell from {{model.random.hgb.cls_precision:.2f}} to {{model.lobo.hgb.cls_precision:.2f}} in basins the model had not seen"
+      },
+      {
+        "id": "join-fanout",
+        "text": "Repeated samples from one well were collapsed to the well before any count"
+      }
+    ]
   },
   "ledger": {
     "type": "cairn",

@@ -10,7 +10,7 @@ resolution-markers = [
 [[package]]
 name = "cairn"
 version = "0.1.0"
-source = { editable = "../cairn" }
+source = { editable = "../cairn-lithium-baseline" }
 dependencies = [
     { name = "numpy" },
     { name = "pandas" },
@@ -294,7 +294,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "cairn", editable = "../cairn" },
+    { name = "cairn", editable = "../cairn-lithium-baseline" },
     { name = "matplotlib", specifier = ">=3.9" },
     { name = "numpy", specifier = ">=2.0" },
     { name = "openpyxl", specifier = ">=3.1" },

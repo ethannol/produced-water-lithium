@@ -3,11 +3,29 @@
 Where is lithium in U.S. oil and gas produced water, and how much of that picture is an
 artifact of what was sampled, measured and compiled? A pre-registered screening and
 prediction study on the USGS National Produced Waters Geochemical Database v3.0, built and
-verified under the [cairn](../cairn) harness.
+verified under the [cairn](https://github.com/ethannol/cairn) harness.
 
-## Main findings (every number here is rendered from `artifacts/numbers.json`)
+## What the analysis shows
 
-- **Non-detects do not exist in v3.0.** The lithium column has 6416
+The database can support an initial screen of measured wells, but it cannot establish
+how much lithium a basin contains. Few measured wells meet both screening criteria,
+and model performance varies substantially when predicting a new basin. Missing
+measurements and differences between source datasets constrain the conclusions.
+
+This study combines a data-quality audit, basin comparisons with uncertainty, and
+prediction evaluated on held-out wells, datasets, and basins.
+
+[Read the report](reports/report.md) · [Five-minute walkthrough](docs/walkthrough.md) · [Reproduce the analysis](#setup)
+
+![Prediction error when holding out wells, datasets, or basins](reports/figures/fig5_prediction_error.png)
+
+<details>
+<summary>Detailed findings and estimates</summary>
+
+All estimates below are rendered from the recorded results in `artifacts/numbers.json`.
+
+
+- **Non-detects cannot be identified in v3.0.** The lithium column has 6416
   values, 0 zeros, 0 negatives and
   0 flags; the dictionary has 0
   detection-limit fields. A result below detection is an empty cell, indistinguishable
@@ -52,11 +70,11 @@ verified under the [cairn](../cairn) harness.
   basins are predicted usefully on their own. Positive control (TDS from the same
   features): R-squared 0.83, passes.
 
-Full report: `reports/report.md`. Five-minute script: `docs/walkthrough.md`.
+Read the [full report](reports/report.md) or the [five-minute walkthrough](docs/walkthrough.md).
 
 ![Basin ranking](reports/figures/fig2_basin_ranking.png)
 
-![Three-protocol error](reports/figures/fig5_prediction_error.png)
+</details>
 
 ## What is not claimed
 
@@ -68,12 +86,20 @@ this version of the database.
 
 ## Setup
 
-Requires [uv](https://docs.astral.sh/uv/) and the cairn checkout beside this directory
-(`../cairn`, commit `1d6e81093eeb4f81cd36d77fa1a47903f0e3be91`; cairn is an editable path dependency in
-`pyproject.toml`). Python 3.12 is pinned in `.python-version` and `uv.lock`.
+Requires Python 3.12 and [uv](https://docs.astral.sh/uv/). From the cloned repository:
 
 ```bash
-uv sync --group dev          # environment, including cairn from ../cairn
+python3 scripts/bootstrap.py
+```
+
+This installs dependencies from the lockfile and checks out Cairn at the study's
+recorded revision (`1d6e81093eeb4f81cd36d77fa1a47903f0e3be91`) in `../cairn-lithium-baseline`.
+It leaves existing checkouts untouched and refuses a baseline folder with a different
+revision or uncommitted changes. The initial installation needs network access.
+
+To reproduce the analysis after installation:
+
+```bash
 uv run pytest                # focused tests of every component
 uv run cairn run             # scripts/00..60 in order, offline, from the committed extract
 uv run cairn verify          # frozen plan, checks, lint, placeholders, clean rerun
@@ -81,8 +107,8 @@ uv run cairn render          # reports/report.md from report.tmpl.md and the led
 uv run python scripts/download.py   # ONLY to refresh the archive and extract (network); re-freeze after
 ```
 
-Everything deterministic runs from a fresh checkout without network access in a few
-minutes; the model steps set `OMP_NUM_THREADS=1` and run folds in parallel processes.
+After installation, the analysis runs offline from the committed extract.
+The model steps set `OMP_NUM_THREADS=1` and run folds in parallel processes.
 
 ## Data provenance
 

@@ -31,7 +31,7 @@ if proc.returncode != 0:
     print(proc.stdout[-3000:])
     raise SystemExit("test suite failed")
 
-cairn_head = subprocess.run(["git", "-C", str(ROOT.parent / "cairn"), "rev-parse", "HEAD"],
+cairn_head = subprocess.run(["git", "-C", str(ROOT.parent / "cairn-lithium-baseline"), "rev-parse", "HEAD"],
                             capture_output=True, text=True)
 record("env.cairn_commit", cairn_head.stdout.strip() if cairn_head.returncode == 0 else "unknown")
 ledger = load_ledger()
